@@ -1,6 +1,6 @@
 /* c-lists
 --------------------------- */
-@use "./../../foundation/system" as s;
+@use "./../../foundation/system" as *;
 
 .c-lists {
     li {
@@ -20,8 +20,15 @@
         font-weight: bold;
     }
 
-    @include s.breakpoint(tablet) {
+    @include breakpoint(tablet) {
     }
-    @include s.breakpoint(pc) {
+    @include breakpoint(pc) {
+    }
+}
+
+.c-lists-news {
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(pc) {
     }
 }

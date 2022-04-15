@@ -65,72 +65,95 @@
 
         <!-- main -->
         <main>
-            <!-- .p-about -->
-            <section id="about" class="p-about c-section">
-                <div class="c-section__inner">
-                    <h2 class="c-section__title">タイトルテキスト</h2>
-                    <p class="c-section__lead">
-                        お問合わせは<a href="#contact">こちら</a
-                        >からご連絡ください。
-                    </p>
-                    <article class="c-section__block">
-                        <!-- .c-details -->
-                        <details class="c-details">
-                            <summary>アコーディオンタイトル</summary>
-                            <div class="c-details__content">
-                                <h3 class="c-listsTitle"></h3>
-                                <ul class="c-lists">
-                                    <li>リスト1</li>
-                                    <li>リスト2</li>
-                                    <li>リスト3</li>
-                                    <li>リスト4</li>
-                                    <li>リスト5</li>
-                                </ul>
-                            </div>
-                        </details>
-
-                        <!-- /.c-details -->
-                    </article>
-                    <article class="c-section__block">
-                        <!-- .c-table -->
-                        <div class="c-table">
-                            <table class="c-table__block">
-                                <caption>
-                                    上に見出しが来るタイプの表・テーブル
-                                </caption>
-                                <tr>
-                                    <th>＼</th>
-                                    <th>表上見出し1</th>
-                                    <th>表上見出し2</th>
-                                </tr>
-                                <tr>
-                                    <th>表横見出し1</th>
-                                    <td>表コンテンツ1</td>
-                                    <td>表コンテンツ2</td>
-                                </tr>
-
-                                <!--  横に結合する  -->
-                                <tr>
-                                    <th>表横見出し2</th>
-                                    <td colspan="2">表コンテンツ横2行</td>
-                                </tr>
-
-                                <!--  縦に結合する  -->
-                                <tr>
-                                    <th rowspan="2">表横見出し3</th>
-                                    <td>表コンテンツ1</td>
-                                    <td>表コンテンツ2</td>
-                                </tr>
-                                <tr>
-                                    <td>表コンテンツ3</td>
-                                    <td>表コンテンツ4</td>
-                                </tr>
-                            </table>
+            <!-- .p-home-fv -->
+            <section class="p-home-fv">
+                <figure class="p-home-fv__figure">
+                    <picture class="p-home-fv__picture">
+                        <img src="" alt="" />
+                    </picture>
+                    <figcaption>
+                        <h1 class="p-home-fv__title"></h1>
+                        <div class="c-cta">
+                            <a href="" class="c-cta__button">問い合わせる</a>
                         </div>
+                    </figcaption>
+                </figure>
+            </section>
+            <!-- /.p-home-fv -->
 
-                        <!-- /.c-table -->
+            <!-- .p-home-feature -->
+            <section class="l-section p-home-feature">
+                <figure class="p-home-feature__figure">
+                    <picture class="p-home-feature__picture">
+                        <img src="" alt="" />
+                    </picture>
+                    <figcaption class="p-home-feature__figcaption">
+                        <h2 class="p-home-feature__title"></h2>
+                        <ul class="c-lists">
+                            <li>リスト1</li>
+                            <li>リスト2</li>
+                            <li>リスト3</li>
+                        </ul>
+                        <p></p>
+                    </figcaption>
+                </figure>
+            </section>
+            <!-- /.p-home-feature -->
+
+            <!-- #skill -->
+            <section id="skill" class="l-section">
+                <div class="l-section__inner">
+                    <h2 class="c-text-heading2">自分にできること</h2>
+                    <p class="c-text-lead">スキルセットです</p>
+                    <article class="c-block-grid4 l-section__block">
+                        <figure class="c-block-grid4__content">
+                            <picture class="c-block-grid4__picture">
+                                <img src="" alt="" />
+                            </picture>
+                            <figcaption class="c-block-grid4__caption">
+                                <h3 class="c-text-heading3"></h3>
+                                <p></p>
+                            </figcaption>
+                        </figure>
                     </article>
-                    <article class="c-section__block">
+                </div>
+            </section>
+            <!-- /#skill -->
+
+            <!-- #work -->
+            <section id="work" class="l-section">
+                <div class="l-section__inner">
+                    <h2 class="c-text-heading2">実績</h2>
+                    <p class="c-text-lead">
+                        制作実績になります。実績の詳細をPDFスライドでもまとめていますのでお問い合わせください。
+                    </p>
+                    <article class="l-section__block">
+                        <h3 class="c-text-heading3">コーディング実績</h3>
+                        <ul class="c-block-slide">
+                            <li></li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+            <!-- /#work -->
+
+            <!-- #service -->
+            <section id="service" class="l-section">
+                <div class="l-section__inner">
+                    <h2 class="c-text-heading2">サービス</h2>
+                    <p class="c-text-lead"></p>
+                    <article class="c-block-caption l-section__block">
+                        <dl class="c-block-caption__description">
+                            <dt class="c-text-heading3"></dt>
+                            <dd></dd>
+                        </dl>
+                        <ul class="c-block-caption__slide">
+                            <li><img src="" alt="" /></li>
+                            <li><img src="" alt="" /></li>
+                            <li><img src="" alt="" /></li>
+                        </ul>
+                    </article>
+                    <article class="l-section__block">
                         <!-- .c-cta -->
                         <div class="c-cta">
                             <p class="c-cta__copy">
@@ -145,13 +168,40 @@
                     </article>
                 </div>
             </section>
-            <!-- /.p-about -->
+            <!-- /#service -->
 
-            <!-- .p-contact -->
-            <section id="contact" class="p-contact c-section">
-                <div class="c-section__inner">
-                    <h2 class="c-section__title">お問い合わせ</h2>
-                    <p class="c-section__lead">
+            <!-- .p-home-about -->
+            <section id="about" class="l-section p-home-about">
+                <figure class="p-home-about__figure">
+                    <picture class="p-home-about__picture">
+                        <img src="" alt="" />
+                    </picture>
+                    <figcaption class="p-home-about__caption">
+                        <h2 class="c-text-heading2"></h2>
+                        <p></p>
+                    </figcaption>
+                </figure>
+                <div class="l-section__inner">
+                    <h3 class="c-text-heading3">技術記事一覧</h3>
+                    <p class="c-text-lead">
+                        Zennなどで技術に関する情報発信も行っています。
+                    </p>
+                    <article class="l-section__block">
+                        <ul class="c-lists-news">
+                            <li class="c-lists-news__list">
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+            <!-- /.p-home-about -->
+
+            <!-- #contact -->
+            <section id="contact" class="l-section">
+                <div class="l-section__inner">
+                    <h2 class="c-text-heading2">お問い合わせ</h2>
+                    <p class="c-text-lead">
                         お問合わせはこちらからご連絡ください。
                     </p>
                     <form
@@ -234,8 +284,8 @@
                                 placeholder="お問い合わせ内容"
                             ></textarea>
                         </div>
-                        <div class="c-form__submit">
-                            <button type="submit" class="c-form__button">
+                        <div class="c-cta">
+                            <button type="submit" class="c-cta__button">
                                 送信する
                             </button>
                         </div>
@@ -254,7 +304,7 @@
                     ></iframe>
                 </div>
             </section>
-            <!-- /.p-contact -->
+            <!-- /#contact -->
         </main>
         <!-- /main -->
 

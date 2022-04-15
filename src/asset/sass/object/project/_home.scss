@@ -1,0 +1,31 @@
+/* p-home
+--------------------------- */
+@use "./../../foundation/system" as *;
+
+.p-home {
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(pc) {
+    }
+}
+
+.p-home-fv {
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(pc) {
+    }
+}
+
+.p-home-feature {
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(pc) {
+    }
+}
+
+.p-home-about {
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(pc) {
+    }
+}

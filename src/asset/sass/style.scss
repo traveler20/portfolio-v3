@@ -10,6 +10,7 @@
  *--------------------------------------*/
 @use "./layout/header";
 @use "./layout/footer";
+@use "./layout/section";
 
 /*--------------------------------------*
  * object
@@ -18,7 +19,8 @@
  * component
  -------------------*/
 @use "./object/component/loading";
-@use "./object/component/section";
+@use "./object/component/text";
+@use "./object/component/block";
 @use "./object/component/table";
 @use "./object/component/lists";
 @use "./object/component/details";
@@ -28,9 +30,10 @@
 /*-------------------
  * project
  -------------------*/
-@use "./object/project/contact";
+@use "./object/project/home";
+// @use "./object/project/contact";
 
 /*-------------------
  * object
  -------------------*/
-@use "./object/utility/display";
+@use "./object/utility/utility";
