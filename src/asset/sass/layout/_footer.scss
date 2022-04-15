@@ -5,14 +5,14 @@
 .l-footer {
     // text-align: center;
     font-size: 1.4rem;
-    background: s.$c-dark;
+    background: s.$c-base-black;
     padding: 40px 0 50px;
 
     &__inner {
         @include s.content-maxwidth();
         margin: 0 auto;
         padding: 10px 20px;
-        color: s.$c-base;
+        color: s.$c-base-white;
 
         display: flex;
         flex-direction: column;
@@ -32,7 +32,7 @@
             margin-top: 6px;
         }
         a {
-            color: s.$c-base;
+            color: s.$c-base-white;
         }
     }
     &__copy {

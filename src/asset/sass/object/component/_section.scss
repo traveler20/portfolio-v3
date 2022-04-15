@@ -3,10 +3,10 @@
 @use "./../../foundation/system" as s;
 
 .c-section {
-    background-color: s.$c-base;
+    background-color: s.$c-base-white;
     padding: 120px 0;
     &:nth-of-type(even) {
-        background-color: s.$c-base-sub;
+        background-color: s.$c-base-lightGray;
     }
 
     &__inner {
@@ -15,21 +15,18 @@
         padding: 10px 20px;
     }
     &__title {
-        color: s.$c-accent;
         text-align: center;
-        font-size: 3.6rem;
+        font-size: 2.8rem;
         font-weight: 700;
-        letter-spacing: 8px;
         margin: 0 auto 12px;
-        @include s.garamond(bold);
     }
     &__lead {
         display: table;
-        margin: 0 auto 44px;
+        margin: 0 auto 32px;
         text-align: left;
     }
     &__block {
-        margin: 32px auto;
+        margin: 32px auto 0;
     }
 
     @include s.breakpoint(tablet) {

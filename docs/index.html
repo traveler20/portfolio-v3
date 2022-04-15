@@ -68,12 +68,13 @@
             <!-- .p-about -->
             <section id="about" class="p-about c-section">
                 <div class="c-section__inner">
-                    <h2 class="c-section__title">about</h2>
+                    <h2 class="c-section__title">タイトルテキスト</h2>
                     <p class="c-section__lead">
                         お問合わせは<a href="#contact">こちら</a
                         >からご連絡ください。
                     </p>
                     <article class="c-section__block">
+                        <!-- .c-details -->
                         <details class="c-details">
                             <summary>アコーディオンタイトル</summary>
                             <div class="c-details__content">
@@ -87,46 +88,61 @@
                                 </ul>
                             </div>
                         </details>
+
+                        <!-- /.c-details -->
                     </article>
                     <article class="c-section__block">
-                        <table class="c-table">
-                            <caption>
-                                上に見出しが来るタイプの表・テーブル
-                            </caption>
-                            <tr>
-                                <th>＼</th>
-                                <th>表上見出し1</th>
-                                <th>表上見出し2</th>
-                            </tr>
-                            <tr>
-                                <th>表横見出し1</th>
-                                <td>表コンテンツ1</td>
-                                <td>表コンテンツ2</td>
-                            </tr>
+                        <!-- .c-table -->
+                        <div class="c-table">
+                            <table class="c-table__block">
+                                <caption>
+                                    上に見出しが来るタイプの表・テーブル
+                                </caption>
+                                <tr>
+                                    <th>＼</th>
+                                    <th>表上見出し1</th>
+                                    <th>表上見出し2</th>
+                                </tr>
+                                <tr>
+                                    <th>表横見出し1</th>
+                                    <td>表コンテンツ1</td>
+                                    <td>表コンテンツ2</td>
+                                </tr>
 
-                            <!--  横に結合する  -->
-                            <tr>
-                                <th>表横見出し2</th>
-                                <td colspan="2">表コンテンツ横2行</td>
-                            </tr>
+                                <!--  横に結合する  -->
+                                <tr>
+                                    <th>表横見出し2</th>
+                                    <td colspan="2">表コンテンツ横2行</td>
+                                </tr>
 
-                            <!--  縦に結合する  -->
-                            <tr>
-                                <th rowspan="2">表横見出し3</th>
-                                <td>表コンテンツ1</td>
-                                <td>表コンテンツ2</td>
-                            </tr>
-                            <tr>
-                                <td>表コンテンツ3</td>
-                                <td>表コンテンツ4</td>
-                            </tr>
-                        </table>
+                                <!--  縦に結合する  -->
+                                <tr>
+                                    <th rowspan="2">表横見出し3</th>
+                                    <td>表コンテンツ1</td>
+                                    <td>表コンテンツ2</td>
+                                </tr>
+                                <tr>
+                                    <td>表コンテンツ3</td>
+                                    <td>表コンテンツ4</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!-- /.c-table -->
                     </article>
-                    <div class="c-cta">
-                        <a href="#contact" class="c-cta__button"
-                            >お問い合わせフォームへ</a
-                        >
-                    </div>
+                    <article class="c-section__block">
+                        <!-- .c-cta -->
+                        <div class="c-cta">
+                            <p class="c-cta__copy">
+                                お問い合わせはこちらから！
+                            </p>
+                            <a href="#contact" class="c-cta__button"
+                                >お問い合わせフォームへ</a
+                            >
+                        </div>
+
+                        <!-- /.c-cta -->
+                    </article>
                 </div>
             </section>
             <!-- /.p-about -->
@@ -134,7 +150,7 @@
             <!-- .p-contact -->
             <section id="contact" class="p-contact c-section">
                 <div class="c-section__inner">
-                    <h2 class="c-section__title">contact</h2>
+                    <h2 class="c-section__title">お問い合わせ</h2>
                     <p class="c-section__lead">
                         お問合わせはこちらからご連絡ください。
                     </p>
@@ -227,6 +243,15 @@
                     <p id="js-formThanks" class="c-formThanks">
                         お問い合わせありがとうございます。
                     </p>
+                    <script>
+                        let submitted = false;
+                    </script>
+                    <iframe
+                        name="hidden_iframe"
+                        id="hidden_iframe"
+                        style="display: none"
+                        onload="if(submitted){document.getElementById('js-formThanks').classList.add('is-received');}"
+                    ></iframe>
                 </div>
             </section>
             <!-- /.p-contact -->
@@ -261,12 +286,5 @@
         <!-- /.l-footer -->
 
         <script src="./asset/js/script.js"></script>
-
-        <iframe
-            name="hidden_iframe"
-            id="hidden_iframe"
-            style="display: none"
-            onload="if(submitted){document.getElementById('js-formThanks').classList.add('is-received');}"
-        ></iframe>
     </body>
 </html>

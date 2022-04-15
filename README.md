@@ -2,10 +2,7 @@
 
 # gulp-starter
 
-```
-クローン元
-https://github.com/traveler20/gulp-starter/tree/e3a7c3984bb2dfe01ed64d08e8362735d8358322
-```
+[クローン元](https://github.com/traveler20/gulp-starter/tree/a3eebf370719c2d417358aa79f3d11b2dc7817dc)
 
 gulp で FLOCSS × Dart Sass のコーディングをするためのスターターキット。
 

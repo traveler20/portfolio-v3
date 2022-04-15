@@ -3,19 +3,18 @@
 
 // color system
 // ---------------------
-$c-base: #efefef;
-$c-base-sub: #fff;
-$c-body: #333;
-$c-accent: #ca6060;
+$c-white: #fff;
+$c-lightGray: #efefef;
+$c-black: #333;
 
-$c-light: #ccc; // header
-$c-dark: #222; // footer
+$c-primary: #ca6060;
 
-// // dark mode
-// $c-base: #333;
-// $c-base-sub: #222;
-// $c-body: #fff;
-// $c-accent: #ca6060;
+$c-base-white: $c-white;
+$c-base-lightGray: $c-lightGray;
+$c-base-black: $c-black;
+
+$c-body-white: $c-white;
+$c-body-black: $c-black;
 
 // transition
 // ---------------------
@@ -31,10 +30,10 @@ $c-dark: #222; // footer
 
 // font system
 // ---------------------
-@mixin garamond($weight: bold) {
-    font-family: "Cormorant Garamond", serif;
-    font-weight: $weight;
-}
+// @mixin garamond($weight: bold) {
+//     font-family: "Cormorant Garamond", serif;
+//     font-weight: $weight;
+// }
 
 // Google Font Awesome
 // ---------------------
