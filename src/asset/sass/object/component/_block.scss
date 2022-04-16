@@ -28,6 +28,169 @@
 }
 
 .c-block-slide {
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    margin: 0 0 52px 0;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $c-base-white;
+        border: none;
+        border-radius: 10px;
+        box-shadow: inset 0 0 1px $c-base-lightGray;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $c-base-black;
+        border-radius: 10px;
+        box-shadow: none;
+    }
+    &__list {
+        flex: 0 0 40%;
+        margin-bottom: 18px;
+    }
+
+    &__figure {
+        position: relative;
+        &:hover .c-block-slide__figcaption {
+            opacity: 1;
+            padding-top: 13%;
+        }
+    }
+    &__figcaption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        background-color: rgba($color: $c-base-white, $alpha: 0.8);
+        transition: all 0.4s ease;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 36px;
+        font-weight: bold;
+        color: $c-body-black;
+    }
+
+    &__modal {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        border: none;
+        opacity: 0;
+        z-index: -1;
+    }
+    &__mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: $c-base-lightGray, $alpha: 0.7);
+    }
+    &__window {
+        width: 80vw;
+        max-width: 1000px;
+        // height: 80vh;
+        margin: auto;
+        padding: 14px;
+        background: $c-base-white;
+        z-index: 1;
+        overflow-y: hidden;
+    }
+    &__dl {
+        color: $c-body-black;
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        height: 80%;
+        h3 {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 16px;
+        color: $c-base-lightGray;
+        font-size: 1.8rem;
+        cursor: pointer;
+        &:hover {
+            color: $c-body-white;
+            transition: all 0.5s;
+        }
+    }
+    &__modal.is_open {
+        animation: modal_open 0.5s ease forwards;
+    }
+    &__modal.is_open .c-block-slide__window {
+        animation: window_open 0.5s ease forwards;
+    }
+    &__modal.is_close {
+        animation: modal_close 0.5s ease forwards;
+    }
+    &__modal.is_close .c-block-slide__window {
+        animation: window_close 0.5s ease forwards;
+    }
+
+    @keyframes modal_open {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+            z-index: 300;
+        }
+    }
+    @keyframes window_open {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @keyframes modal_close {
+        0% {
+            z-index: 300;
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes window_close {
+        0% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-30px);
+            opacity: 0;
+        }
+    }
     @include breakpoint(tablet) {
     }
     @include breakpoint(pc) {
@@ -37,6 +200,8 @@
 .c-block-caption {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     gap: 16px;
 
     &__description {
@@ -44,29 +209,41 @@
         flex-direction: column;
         gap: 8px;
     }
-    &__slide {
-        li:nth-of-type(2),
-        li:nth-of-type(3) {
-            display: none;
+    &__slider {
+        width: 300px;
+        height: 240px;
+        overflow: hidden;
+    }
+    &__slide-lists {
+        width: 300%;
+        animation: slider 12s infinite ease;
+    }
+    &__slide-list {
+        width: 300px;
+        float: left;
+        img {
+            object-fit: cover;
         }
     }
 
     @include breakpoint(tablet) {
         flex-direction: row;
-
-        &__description {
-            position: sticky;
-            top: 0;
-            padding: 8px 0;
-        }
-        &__slide {
-            li:nth-of-type(2),
-            li:nth-of-type(3) {
-                display: block;
-                margin-top: 18px;
-            }
-        }
     }
     @include breakpoint(pc) {
+    }
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-300px);
+    }
+    60% {
+        transform: translateX(-600px);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
