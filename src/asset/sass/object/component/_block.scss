@@ -14,6 +14,11 @@
         flex-direction: column;
         gap: 8px;
     }
+    &__picture {
+        img {
+            filter: grayscale(80%);
+        }
+    }
     &__caption {
         display: flex;
         flex-direction: column;
@@ -56,7 +61,7 @@
         width: 290px;
         margin: 0 0 20px 0;
         padding: 0 0 0 8px;
-        border-bottom: solid 2px $c-base-black;
+        border-bottom: solid 2px $c-base-white;
     }
 
     &__list {
@@ -219,30 +224,64 @@
     align-items: center;
     gap: 16px;
 
+    &--reverse {
+        @extend .c-block-caption;
+    }
+
     &__description {
         display: flex;
         flex-direction: column;
         gap: 8px;
+
+        padding: 32px 24px;
+        margin: -56px 0 0 20px;
+        background: $c-base-white;
+        box-shadow: 0 4px 4px -4px rgba($color: $c-base-black, $alpha: 0.6);
+        z-index: 1;
     }
     &__slider {
+        position: relative;
+        overflow: hidden;
         width: 300px;
         height: 240px;
-        overflow: hidden;
-    }
-    &__slide-lists {
-        width: 300%;
-        animation: slider 12s infinite ease;
+        margin: auto;
+        background: $c-base-darkGray;
     }
     &__slide-list {
-        width: 300px;
-        float: left;
-        img {
-            object-fit: cover;
+        display: block;
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        left: 100%;
+        animation: slider 9s ease infinite;
+        &:nth-of-type(1) {
+            animation-delay: 0s;
+        }
+        &:nth-of-type(2) {
+            animation-delay: 3s;
+        }
+        &:nth-of-type(3) {
+            animation-delay: 6s;
         }
     }
 
     @include breakpoint(tablet) {
         flex-direction: row;
+        gap: 0;
+        &--reverse {
+            flex-direction: row-reverse;
+            .c-block-caption__description {
+                margin: 0 0 0 -80px;
+            }
+        }
+
+        &__description {
+            margin: 0 -80px 0 0;
+        }
+        &__slider {
+            width: 500px;
+            height: 400px;
+        }
     }
     @include breakpoint(pc) {
     }
@@ -250,15 +289,18 @@
 
 @keyframes slider {
     0% {
-        transform: translateX(0);
+        left: 100%;
     }
-    30% {
-        transform: translateX(-300px);
+    4% {
+        left: 0;
     }
-    60% {
-        transform: translateX(-600px);
+    29% {
+        left: 0;
+    }
+    33% {
+        left: -100%;
     }
     100% {
-        transform: translateX(0);
+        left: -100%;
     }
 }
