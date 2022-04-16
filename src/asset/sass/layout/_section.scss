@@ -3,16 +3,16 @@
 @use "./../foundation/system" as *;
 
 .l-section {
+    padding: 0px 0px;
     background-color: $c-base-white;
-    padding: 120px 0;
-    &:nth-of-type(even) {
+    &:nth-of-type(odd) {
         background-color: $c-base-lightGray;
     }
 
     &__inner {
         @include content-maxwidth();
         margin: 0 auto;
-        padding: 10px 20px;
+        padding: 120px 20px;
     }
     &__block {
         margin: 32px auto 0;

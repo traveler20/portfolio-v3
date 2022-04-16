@@ -3,10 +3,70 @@
 @use "./../../foundation/system" as *;
 
 .c-block-grid4 {
+    display: grid;
+    // 左寄せ
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 40px 40px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    @include breakpoint(tablet) {
+        grid-template-columns: repeat(auto-fit, 260px);
+        grid-gap: 20px 20px;
+    }
+    @include breakpoint(pc) {
+    }
 }
 
 .c-block-slide {
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(pc) {
+    }
 }
 
 .c-block-caption {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    &__slide {
+        li:nth-of-type(2),
+        li:nth-of-type(3) {
+            display: none;
+        }
+    }
+
+    @include breakpoint(tablet) {
+        flex-direction: row;
+
+        &__description {
+            position: sticky;
+            top: 0;
+            padding: 8px 0;
+        }
+        &__slide {
+            li:nth-of-type(2),
+            li:nth-of-type(3) {
+                display: block;
+                margin-top: 18px;
+            }
+        }
+    }
+    @include breakpoint(pc) {
+    }
 }

@@ -43,23 +43,6 @@ $header-height: 60px;
         gap: 14px;
     }
 
-    &__navCta {
-        display: inline-block;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        padding: 3px 16px;
-        color: s.$c-body-white;
-        background-color: s.$c-base-black;
-        border: solid 1px s.$c-base-black;
-        border-radius: 50px;
-        &:hover {
-            color: s.$c-body-black;
-            background-color: transparent;
-            text-decoration: none;
-        }
-    }
-
     &__navLists {
         z-index: 1;
         position: fixed;
@@ -166,16 +149,8 @@ $header-height: 60px;
     }
 
     @include s.breakpoint(tablet) {
-        &__inner {
-            justify-content: space-evenly;
-        }
-
         &__nav {
             flex-direction: row-reverse;
-        }
-
-        &__navCta {
-            padding: 3px 32px;
         }
 
         &__navLists {

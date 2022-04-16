@@ -32,11 +32,15 @@
         <!-- /.c-loading -->
 
         <!-- .l-header -->
-        <header class="l-header" id="js-header">
+        <header class="l-header">
             <div class="l-header__inner">
-                <a class="l-header__logo" href="/">logo</a>
+                <a class="l-header__logo" href="">logo</a>
                 <nav class="l-header__nav">
-                    <a href="#contact" class="l-header__navCta">contact</a>
+                    <div class="c-cta">
+                        <a href="#contact" class="c-cta__button--min"
+                            >お問い合わせ</a
+                        >
+                    </div>
                     <input
                         type="checkbox"
                         class="js-navToggle"
@@ -53,10 +57,11 @@
                         class="l-header__navClose"
                     ></label>
                     <ul class="l-header__navLists js-navLists">
-                        <li><a href="/about">about</a></li>
-                        <li><a href="#work">work</a></li>
-                        <li><a href="#service">service</a></li>
-                        <li><a href="#profile">profile</a></li>
+                        <li><a href="#feature">特長</a></li>
+                        <li><a href="#skill">スキル</a></li>
+                        <li><a href="#work">実績</a></li>
+                        <li><a href="#service">サービス</a></li>
+                        <li><a href="#about">プロフィール</a></li>
                     </ul>
                 </nav>
             </div>
@@ -69,12 +74,18 @@
             <section class="p-home-fv">
                 <figure class="p-home-fv__figure">
                     <picture class="p-home-fv__picture">
-                        <img src="" alt="" />
+                        <img src="./asset/img/fv-content.webp" alt="" />
                     </picture>
-                    <figcaption>
-                        <h1 class="p-home-fv__title"></h1>
+                    <figcaption class="p-home-fv__caption">
+                        <h1 class="p-home-fv__title">
+                            <span>web designer</span><br />
+                            デザインからコーディング<br />
+                            一貫したホームページ制作
+                        </h1>
                         <div class="c-cta">
-                            <a href="" class="c-cta__button">問い合わせる</a>
+                            <a href="#contact" class="c-cta__button"
+                                >問い合わせる</a
+                            >
                         </div>
                     </figcaption>
                 </figure>
@@ -85,16 +96,32 @@
             <section class="l-section p-home-feature">
                 <figure class="p-home-feature__figure">
                     <picture class="p-home-feature__picture">
-                        <img src="" alt="" />
+                        <img src="./asset/img/feature-content.webp" alt="" />
                     </picture>
                     <figcaption class="p-home-feature__figcaption">
-                        <h2 class="p-home-feature__title"></h2>
+                        <h2 class="p-home-feature__title">特長</h2>
                         <ul class="c-lists">
-                            <li>リスト1</li>
-                            <li>リスト2</li>
-                            <li>リスト3</li>
+                            <li>
+                                ホームページをつくりたいけど誰に何を任せればいいかわからない…。
+                            </li>
+                            <li>
+                                今のホームページをもう少し改善したいけど詳しい技術がわからない…。
+                            </li>
+                            <li>
+                                デザイナーとエンジニア、それぞれ依頼してディレクションするのが面倒…。
+                            </li>
                         </ul>
-                        <p></p>
+                        <div class="p-home-feature__description">
+                            <p>
+                                一貫したホームページ制作スキルをもとに解決します。
+                            </p>
+                            <p>
+                                ヒアリング・サイト設計からデザイン・コーディング、ホームページの管理・運用まで。
+                            </p>
+                            <p>
+                                ホームページ制作・運用に関する悩みがあればお気軽にご相談ください。
+                            </p>
+                        </div>
                     </figcaption>
                 </figure>
             </section>
@@ -103,16 +130,88 @@
             <!-- #skill -->
             <section id="skill" class="l-section">
                 <div class="l-section__inner">
-                    <h2 class="c-text-heading2">自分にできること</h2>
-                    <p class="c-text-lead">スキルセットです</p>
+                    <h2 class="c-text-heading2">
+                        skill
+                        <span>自分にできること</span>
+                    </h2>
+                    <p class="c-text-lead">
+                        スキルセットの一覧です。サイト設計からワイヤーフレーム・デザイン、コーディング、ホームページの管理・運用まで担当できます。
+                    </p>
                     <article class="c-block-grid4 l-section__block">
                         <figure class="c-block-grid4__content">
                             <picture class="c-block-grid4__picture">
-                                <img src="" alt="" />
+                                <img
+                                    src="https://placehold.jp/400x300.png"
+                                    alt=""
+                                />
                             </picture>
                             <figcaption class="c-block-grid4__caption">
-                                <h3 class="c-text-heading3"></h3>
-                                <p></p>
+                                <h3 class="c-text-heading3">サイト設計</h3>
+                                <p>
+                                    ヒアリングから事業の調査・競合の調査を実施します。ただ依頼通りにサイトを制作するだけではなく、事業を理解したうえでランディングページのコンテンツや訴求を提案します。
+                                </p>
+                                <ul class="c-lists">
+                                    <li>ヒアリング</li>
+                                    <li>事業・競合調査</li>
+                                    <li>サイトの戦略設計</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <figure class="c-block-grid4__content">
+                            <picture class="c-block-grid4__picture">
+                                <img
+                                    src="https://placehold.jp/400x300.png"
+                                    alt=""
+                                />
+                            </picture>
+                            <figcaption class="c-block-grid4__caption">
+                                <h3 class="c-text-heading3">サイト設計</h3>
+                                <p>
+                                    ヒアリングから事業の調査・競合の調査を実施します。ただ依頼通りにサイトを制作するだけではなく、事業を理解したうえでランディングページのコンテンツや訴求を提案します。
+                                </p>
+                                <ul class="c-lists">
+                                    <li>ヒアリング</li>
+                                    <li>事業・競合調査</li>
+                                    <li>サイトの戦略設計</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <figure class="c-block-grid4__content">
+                            <picture class="c-block-grid4__picture">
+                                <img
+                                    src="https://placehold.jp/400x300.png"
+                                    alt=""
+                                />
+                            </picture>
+                            <figcaption class="c-block-grid4__caption">
+                                <h3 class="c-text-heading3">サイト設計</h3>
+                                <p>
+                                    ヒアリングから事業の調査・競合の調査を実施します。ただ依頼通りにサイトを制作するだけではなく、事業を理解したうえでランディングページのコンテンツや訴求を提案します。
+                                </p>
+                                <ul class="c-lists">
+                                    <li>ヒアリング</li>
+                                    <li>事業・競合調査</li>
+                                    <li>サイトの戦略設計</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <figure class="c-block-grid4__content">
+                            <picture class="c-block-grid4__picture">
+                                <img
+                                    src="https://placehold.jp/400x300.png"
+                                    alt=""
+                                />
+                            </picture>
+                            <figcaption class="c-block-grid4__caption">
+                                <h3 class="c-text-heading3">サイト設計</h3>
+                                <p>
+                                    ヒアリングから事業の調査・競合の調査を実施します。ただ依頼通りにサイトを制作するだけではなく、事業を理解したうえでランディングページのコンテンツや訴求を提案します。
+                                </p>
+                                <ul class="c-lists">
+                                    <li>ヒアリング</li>
+                                    <li>事業・競合調査</li>
+                                    <li>サイトの戦略設計</li>
+                                </ul>
                             </figcaption>
                         </figure>
                     </article>
@@ -123,7 +222,10 @@
             <!-- #work -->
             <section id="work" class="l-section">
                 <div class="l-section__inner">
-                    <h2 class="c-text-heading2">実績</h2>
+                    <h2 class="c-text-heading2">
+                        work
+                        <span>実績</span>
+                    </h2>
                     <p class="c-text-lead">
                         制作実績になります。実績の詳細をPDFスライドでもまとめていますのでお問い合わせください。
                     </p>
@@ -140,17 +242,45 @@
             <!-- #service -->
             <section id="service" class="l-section">
                 <div class="l-section__inner">
-                    <h2 class="c-text-heading2">サービス</h2>
+                    <h2 class="c-text-heading2">
+                        service
+                        <span>サービス</span>
+                    </h2>
                     <p class="c-text-lead"></p>
                     <article class="c-block-caption l-section__block">
                         <dl class="c-block-caption__description">
-                            <dt class="c-text-heading3"></dt>
-                            <dd></dd>
+                            <dt class="c-text-heading3 c-text-left">
+                                ホームページの設計・デザイン
+                            </dt>
+                            <dd>
+                                事業の理解・競合サイトの分析をもとにホームページを設計・デザインします。<br />
+                                ご要望や期間に合わせてホームページの構成からデザインに落とし込んでいきます。
+                                <ul class="c-lists">
+                                    <li>ディレクトリツリー</li>
+                                    <li>ワイヤーフレーム</li>
+                                    <li>デザイン</li>
+                                </ul>
+                            </dd>
                         </dl>
                         <ul class="c-block-caption__slide">
-                            <li><img src="" alt="" /></li>
-                            <li><img src="" alt="" /></li>
-                            <li><img src="" alt="" /></li>
+                            <li>
+                                <img
+                                    src="https://placehold.jp/400x300.png"
+                                    alt=""
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="https://placehold.jp/400x300.png"
+                                    alt=""
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="https://placehold.jp/400x300.png"
+                                    alt=""
+                                />
+                            </li>
                         </ul>
                     </article>
                     <article class="l-section__block">
@@ -172,24 +302,64 @@
 
             <!-- .p-home-about -->
             <section id="about" class="l-section p-home-about">
-                <figure class="p-home-about__figure">
-                    <picture class="p-home-about__picture">
-                        <img src="" alt="" />
-                    </picture>
-                    <figcaption class="p-home-about__caption">
-                        <h2 class="c-text-heading2"></h2>
-                        <p></p>
-                    </figcaption>
-                </figure>
                 <div class="l-section__inner">
-                    <h3 class="c-text-heading3">技術記事一覧</h3>
-                    <p class="c-text-lead">
-                        Zennなどで技術に関する情報発信も行っています。
-                    </p>
+                    <figure class="p-home-about__figure">
+                        <picture class="p-home-about__picture">
+                            <!-- <img src="./asset/img/profile.webp" alt="" /> -->
+                        </picture>
+                        <figcaption class="p-home-about__caption">
+                            <h2 class="c-text-heading2 c-text-left">
+                                profile
+                                <span>プロフィール</span>
+                            </h2>
+                            <p>
+                                こんにちは！WEBデザイナー・WEBディベロッパーのゆるけーと申します。<br />
+                                本業・副業ともにデザイン・コーディング業務を担当しています。
+                            </p>
+                            <p>
+                                ただランディングページやホームページをつくっておわりではなく、継続的に運用・改善して考えることができますので、お気軽にご相談いただければと思います。
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <article class="l-section__block">
+                        <h3 class="c-text-heading3">技術記事一覧</h3>
+                        <p class="c-text-lead">
+                            Zennなどで技術に関する情報発信も行っています。
+                        </p>
+                    </article>
                     <article class="l-section__block">
                         <ul class="c-lists-news">
                             <li class="c-lists-news__list">
-                                <a href=""></a>
+                                <a
+                                    class="c-lists-news__link"
+                                    href="https://zenn.dev/yurukei20/articles/2b315c826be4d8"
+                                >
+                                    <span class="c-lists-news__category"
+                                        >Zenn</span
+                                    >【CDNのコピペあり】Google Fonts
+                                    Iconsの導入・使い方・装飾など【保存版】
+                                </a>
+                            </li>
+                            <li class="c-lists-news__list">
+                                <a
+                                    class="c-lists-news__link"
+                                    href="https://zenn.dev/yurukei20/articles/fb09545140a366"
+                                >
+                                    <span class="c-lists-news__category"
+                                        >Zenn</span
+                                    >【脱JavaScript】HTMLとCSSでできるJavaScriptっぽい機能
+                                </a>
+                            </li>
+                            <li class="c-lists-news__list">
+                                <a
+                                    class="c-lists-news__link"
+                                    href="https://zenn.dev/yurukei20/articles/9741118bfb5ee0"
+                                >
+                                    <span class="c-lists-news__category"
+                                        >Zenn</span
+                                    >Google
+                                    FormをHTML/CSSでデザインしたフォームで運用する方法
+                                </a>
                             </li>
                         </ul>
                     </article>
@@ -200,7 +370,13 @@
             <!-- #contact -->
             <section id="contact" class="l-section">
                 <div class="l-section__inner">
-                    <h2 class="c-text-heading2">お問い合わせ</h2>
+                    <h2 class="c-text-heading2">
+                        contact
+                        <span
+                            >ホームページに関することなら<br />
+                            お気軽にご相談ください</span
+                        >
+                    </h2>
                     <p class="c-text-lead">
                         お問合わせはこちらからご連絡ください。
                     </p>

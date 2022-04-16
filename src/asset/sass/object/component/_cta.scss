@@ -40,8 +40,8 @@
         font-size: 14px;
         font-weight: bold;
         color: s.$c-base-white;
-        background-color: s.$c-primary;
-        border: solid 2px s.$c-primary;
+        background-color: s.$c-base-black;
+        border: solid 2px s.$c-base-black;
         border-radius: 2px;
         margin: 0 auto;
         padding: 16px 20px;
@@ -57,8 +57,17 @@
             font-family: "Material Icons";
         }
         &:hover {
-            color: s.$c-primary;
+            color: s.$c-base-black;
             background-color: transparent;
+        }
+
+        &--min {
+            @extend .c-cta__button;
+            padding: 3px 16px;
+            min-width: 120px;
+            &:after {
+                content: "";
+            }
         }
     }
 

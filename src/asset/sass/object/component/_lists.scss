@@ -27,7 +27,43 @@
 }
 
 .c-lists-news {
+    max-width: 720px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    &__list {
+        padding: 16px 16px;
+        border-top: solid 1px $c-base-black;
+        &:last-of-type {
+            border-bottom: solid 1px $c-base-black;
+        }
+    }
+
+    &__link {
+        color: $c-body-black;
+        text-decoration: none;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+
+        &:hover {
+            color: $c-primary;
+        }
+    }
+    &__category {
+        display: inline-block;
+        color: $c-body-white;
+        background-color: $c-base-black;
+        border-radius: 2px;
+        padding: 4px 16px;
+        margin: 0 8px 0 0;
+    }
     @include breakpoint(tablet) {
+        &__link {
+            -webkit-line-clamp: 1;
+        }
     }
     @include breakpoint(pc) {
     }
