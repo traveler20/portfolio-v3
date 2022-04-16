@@ -33,13 +33,15 @@
             <!-- /.p-home-fv -->
 
             <!-- .p-home-feature -->
-            <section class="l-section p-home-feature">
+            <section id="feature" class="l-section p-home-feature">
                 <figure class="p-home-feature__figure">
                     <picture class="p-home-feature__picture">
                         <img src="./asset/img/feature-content.webp" alt="" />
                     </picture>
                     <figcaption class="p-home-feature__figcaption">
-                        <h2 class="p-home-feature__title">特長</h2>
+                        <h2 class="p-home-feature__title">
+                            ホームページ制作なら全ておまかせください
+                        </h2>
                         <ul class="c-lists">
                             <li>
                                 ホームページをつくりたいけど誰に何を任せればいいかわからない…。
@@ -71,8 +73,8 @@
             <section id="skill" class="l-section">
                 <div class="l-section__inner">
                     <h2 class="c-text-heading2">
-                        skill
-                        <span>自分にできること</span>
+                        <span>skill</span>
+                        自分にできること
                     </h2>
                     <p class="c-text-lead">
                         スキルセットの一覧です。サイト設計からワイヤーフレーム・デザイン、コーディング、ホームページの管理・運用まで担当できます。
@@ -163,22 +165,23 @@
             <section id="work" class="l-section">
                 <div class="l-section__inner">
                     <h2 class="c-text-heading2">
-                        work
-                        <span>実績</span>
+                        <span>work</span>
+                        実績
                     </h2>
                     <p class="c-text-lead">
                         制作実績になります。実績の詳細をPDFスライドでもまとめていますのでお問い合わせください。
                     </p>
                     <article class="l-section__block">
-                        <h3 class="c-text-heading3">コーディング実績</h3>
+                        <h3 class="c-block-slideTitle">コーディング実績</h3>
                         <ul class="c-block-slide">
+                            <% for (let i = 0; i < 5; i++) { %>
                             <li class="c-block-slide__list">
                                 <figure
                                     class="c-block-slide__figure"
                                     data-modal-open="modal-1"
                                 >
                                     <img
-                                        src="https://traveler20.site/portfolio/asset/img/work/cording_lp-plant.webp"
+                                        src="./asset/img/work/cording_lp-plant.webp"
                                         alt=""
                                         loading="lazy"
                                     />
@@ -198,7 +201,7 @@
                                             <dt>
                                                 <img
                                                     class="c-block-slide__img"
-                                                    src="https://traveler20.site/portfolio/asset/img/work/cording_lp-plant.webp"
+                                                    src="./asset/img/work/cording_lp-plant.webp"
                                                     alt=""
                                                     loading="lazy"
                                                 />
@@ -226,6 +229,7 @@
                                     </div>
                                 </article>
                             </li>
+                            <% } %>
                         </ul>
                     </article>
                 </div>
@@ -236,8 +240,8 @@
             <section id="service" class="l-section">
                 <div class="l-section__inner">
                     <h2 class="c-text-heading2">
-                        service
-                        <span>サービス</span>
+                        <span>service</span>
+                        サービス
                     </h2>
                     <p class="c-text-lead"></p>
                     <article class="c-block-caption l-section__block">
@@ -296,8 +300,8 @@
                         </picture>
                         <figcaption class="p-home-about__caption">
                             <h2 class="c-text-heading2 c-text-left">
-                                profile
-                                <span>プロフィール</span>
+                                <span>profile</span>
+                                プロフィール
                             </h2>
                             <p>
                                 こんにちは！WEBデザイナー・WEBディベロッパーのゆるけーと申します。<br />
@@ -309,7 +313,7 @@
                         </figcaption>
                     </figure>
                     <article class="l-section__block">
-                        <h3 class="c-text-heading3">技術記事一覧</h3>
+                        <h3 class="c-text-heading3 mb-2">技術記事一覧</h3>
                         <p class="c-text-lead">
                             Zennなどで技術に関する情報発信も行っています。
                         </p>
@@ -320,6 +324,8 @@
                                 <a
                                     class="c-lists-news__link"
                                     href="https://zenn.dev/yurukei20/articles/2b315c826be4d8"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <span class="c-lists-news__category"
                                         >Zenn</span
@@ -331,6 +337,8 @@
                                 <a
                                     class="c-lists-news__link"
                                     href="https://zenn.dev/yurukei20/articles/fb09545140a366"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <span class="c-lists-news__category"
                                         >Zenn</span
@@ -341,6 +349,8 @@
                                 <a
                                     class="c-lists-news__link"
                                     href="https://zenn.dev/yurukei20/articles/9741118bfb5ee0"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <span class="c-lists-news__category"
                                         >Zenn</span
@@ -358,11 +368,9 @@
             <section id="contact" class="l-section">
                 <div class="l-section__inner">
                     <h2 class="c-text-heading2">
-                        contact
-                        <span
-                            >ホームページに関することなら<br />
-                            お気軽にご相談ください</span
-                        >
+                        <span>contact</span>
+                        ホームページに関することなら<br />
+                        お気軽にご相談ください
                     </h2>
                     <p class="c-text-lead">
                         お問合わせはこちらからご連絡ください。

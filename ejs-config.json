@@ -2,12 +2,12 @@
     "data": {
         "meta": {
             "home": {
-                "title": "HOMEページタイトル",
-                "description": "Site Description"
+                "title": "ゆるけーのホームページ｜デザイン・コーディングから管理・運用を担います。",
+                "description": "デザインからコーディング、ホームページの更新・管理・運用まで。ホームページ制作・運用に関してすべておまかせください。"
             },
             "about": {
-                "title": "ABOUTページタイトル",
-                "description": "About Description",
+                "title": "ABOUT - ゆるけーについて",
+                "description": "WEBデザイナー・WEBディベロッパーであるゆるけーのホームページです。",
                 "url": "about"
             }
         }
