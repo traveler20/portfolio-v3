@@ -29,6 +29,11 @@
         margin: 0 auto;
     }
 
+    // 非推奨だが仮でスタイリング…。
+    .c-cta__button {
+        min-width: 262px;
+    }
+
     @include breakpoint(tablet) {
     }
     @include breakpoint(pc) {
