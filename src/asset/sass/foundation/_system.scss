@@ -67,10 +67,16 @@ $c-body-black: $c-black;
 .pc-only {
     display: none;
 }
+.sp-only {
+    display: inline-block;
+}
 @include breakpoint(tablet) {
 }
 @include breakpoint(pc) {
     .pc-only {
         display: inline-block;
+    }
+    .sp-only {
+        display: none;
     }
 }
