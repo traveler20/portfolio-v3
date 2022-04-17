@@ -185,28 +185,27 @@
                         制作実績になります。実績の詳細をPDFスライドでもまとめていますのでお問い合わせください。
                     </p>
                     <article class="l-section__block">
-                        <h3 class="c-block-slideTitle">コーディング実績</h3>
+                        <h3 class="c-block-slideTitle">WEBサイトデザイン</h3>
                         <ul class="c-block-slide">
-                            <% for (let i = 0; i < 5; i++) { %>
+                            <% for (let i in work_design) { %>
                             <li class="c-block-slide__list">
                                 <figure
                                     class="c-block-slide__figure"
-                                    data-modal-open="modal-1"
+                                    data-modal-open="modal-<%- work_design[i].work_modal %>"
                                 >
                                     <img
-                                        src="./asset/img/work/cording_lp-plant.webp"
+                                        src="./asset/img/work/<%- work_design[i].work_img %>.webp"
                                         alt=""
-                                        loading="lazy"
                                     />
                                     <figcaption
                                         class="c-block-slide__figcaption"
                                     >
-                                        ランディングページ
+                                        <%- work_design[i].work_figcaption %>
                                     </figcaption>
                                 </figure>
                                 <article
                                     class="c-block-slide__modal"
-                                    data-modal="modal-1"
+                                    data-modal="modal-<%- work_design[i].work_modal %>"
                                 >
                                     <div class="c-block-slide__mask"></div>
                                     <div class="c-block-slide__window">
@@ -214,24 +213,94 @@
                                             <dt>
                                                 <img
                                                     class="c-block-slide__img"
-                                                    src="./asset/img/work/cording_lp-plant.webp"
+                                                    src="./asset/img/work/<%- work_design[i].work_img %>.webp"
                                                     alt=""
-                                                    loading="lazy"
                                                 />
                                             </dt>
                                             <dd>
                                                 <h3>
-                                                    観葉植物通販サイトのランディングページ
+                                                    <%-
+                                                    work_design[i].work_modalTitle
+                                                    %>
                                                 </h3>
                                                 <p>
-                                                    HTML/CSS/SCSS/JavaScript/jQuery
+                                                    <%-
+                                                    work_design[i].work_modalSkill
+                                                    %>
                                                 </p>
                                                 <p>
                                                     <a
-                                                        href="https://traveler20.github.io/WDLanding/"
+                                                        href="<%- work_design[i].work_modalLink %>"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
-                                                        >Webサイト</a
+                                                        ><%-
+                                                        work_design[i].work_modalLinkText
+                                                        %></a
+                                                    >
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                        <div class="c-block-slide__close">
+                                            &times;
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <% } %>
+                        </ul>
+                    </article>
+                    <article class="l-section__block">
+                        <h3 class="c-block-slideTitle">コーディング実装</h3>
+                        <ul class="c-block-slide">
+                            <% for (let i in work_cording) { %>
+                            <li class="c-block-slide__list">
+                                <figure
+                                    class="c-block-slide__figure"
+                                    data-modal-open="modal-<%- work_cording[i].work_modal %>"
+                                >
+                                    <img
+                                        src="./asset/img/work/<%- work_cording[i].work_img %>.webp"
+                                        alt=""
+                                    />
+                                    <figcaption
+                                        class="c-block-slide__figcaption"
+                                    >
+                                        <%- work_cording[i].work_figcaption %>
+                                    </figcaption>
+                                </figure>
+                                <article
+                                    class="c-block-slide__modal"
+                                    data-modal="modal-<%- work_cording[i].work_modal %>"
+                                >
+                                    <div class="c-block-slide__mask"></div>
+                                    <div class="c-block-slide__window">
+                                        <dl class="c-block-slide__dl">
+                                            <dt>
+                                                <img
+                                                    class="c-block-slide__img"
+                                                    src="./asset/img/work/<%- work_cording[i].work_img %>.webp"
+                                                    alt=""
+                                                />
+                                            </dt>
+                                            <dd>
+                                                <h3>
+                                                    <%-
+                                                    work_cording[i].work_modalTitle
+                                                    %>
+                                                </h3>
+                                                <p>
+                                                    <%-
+                                                    work_cording[i].work_modalSkill
+                                                    %>
+                                                </p>
+                                                <p>
+                                                    <a
+                                                        href="<%- work_cording[i].work_modalLink %>"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        ><%-
+                                                        work_cording[i].work_modalLinkText
+                                                        %></a
                                                     >
                                                 </p>
                                             </dd>
