@@ -1,5 +1,8 @@
 {
     "data": {
+        "url": {
+            "home": "https://yurukei-career.com/work/"
+        },
         "meta": {
             "home": {
                 "title": "ゆるけーのホームページ｜デザイン・コーディングから管理・運用を担います。",
@@ -12,98 +15,119 @@
             }
         }
     },
-    "work_cording": [
-        {
-            "work_modal": "1",
-            "work_img": "cording_traveler20",
-            "work_figcaption": "ホームページ",
-            "work_modalTitle": "個人事業主用に制作したホームページ",
-            "work_modalSkill": "HTML/CSS/SCSS/JavaScript/WordPress",
-            "work_modalLink": "https://traveler20.site",
-            "work_modalLinkText": "Webサイト"
-        },
-        {
-            "work_modal": "2",
-            "work_img": "cording_lp-plant",
-            "work_figcaption": "ランディングページ",
-            "work_modalTitle": "観葉植物通販サイトのランディングページ",
-            "work_modalSkill": "HTML/CSS/SCSS/JavaScript/jQuery",
-            "work_modalLink": "https://traveler20.github.io/wdlanding/",
-            "work_modalLinkText": "Webサイト"
-        },
-        {
-            "work_modal": "3",
-            "work_img": "cording_topic-tonomine",
-            "work_figcaption": "特集サイト",
-            "work_modalTitle": "砥峰高原特集サイト",
-            "work_modalSkill": "HTML/CSS/JavaScript",
-            "work_modalLink": "https://traveler20.github.io/TonominePlateau/",
-            "work_modalLinkText": "Webサイト"
-        },
-        {
-            "work_modal": "4",
-            "work_img": "cording_lp-kokopp",
-            "work_figcaption": "ランディングページ",
-            "work_modalTitle": "アプリ「ここっぷ」のランディングページ",
-            "work_modalSkill": "HTML/CSS/JavaScript",
-            "work_modalLink": "https://traveler20.github.io/kokopp/lp/",
-            "work_modalLinkText": "Webサイト"
-        },
-        {
-            "work_modal": "5",
-            "work_img": "cording_portfolio",
-            "work_figcaption": "ポートフォリオ",
-            "work_modalTitle": "ポートフォリオサイト",
-            "work_modalSkill": "HTML/CSS/SCSS/JavaScript",
-            "work_modalLink": "https://traveler20.site/portfolio",
-            "work_modalLinkText": "Webサイト"
-        }
-    ],
-    "work_design": [
-        {
-            "work_modal": "2-5",
-            "work_img": "cording_portfolio",
-            "work_figcaption": "ポートフォリオ",
-            "work_modalTitle": "ポートフォリオサイト",
-            "work_modalSkill": "HTML/CSS/SCSS/JavaScript",
-            "work_modalLink": "https://traveler20.site/portfolio",
-            "work_modalLinkText": "Webサイト"
-        },
-        {
-            "work_modal": "2-1",
-            "work_img": "cording_traveler20",
-            "work_figcaption": "ホームページ",
-            "work_modalTitle": "個人事業主用に制作したホームページ",
-            "work_modalSkill": "HTML/CSS/SCSS/JavaScript/WordPress",
-            "work_modalLink": "https://traveler20.site",
-            "work_modalLinkText": "Webサイト"
-        },
-        {
-            "work_modal": "2-2",
-            "work_img": "cording_lp-plant",
-            "work_figcaption": "ランディングページ",
-            "work_modalTitle": "観葉植物通販サイトのランディングページ",
-            "work_modalSkill": "HTML/CSS/SCSS/JavaScript/jQuery",
-            "work_modalLink": "https://traveler20.github.io/wdlanding/",
-            "work_modalLinkText": "Webサイト"
-        },
-        {
-            "work_modal": "2-3",
-            "work_img": "cording_topic-tonomine",
-            "work_figcaption": "特集サイト",
-            "work_modalTitle": "砥峰高原特集サイト",
-            "work_modalSkill": "HTML/CSS/JavaScript",
-            "work_modalLink": "https://traveler20.github.io/TonominePlateau/",
-            "work_modalLinkText": "Webサイト"
-        },
-        {
-            "work_modal": "2-4",
-            "work_img": "cording_lp-kokopp",
-            "work_figcaption": "ランディングページ",
-            "work_modalTitle": "アプリ「ここっぷ」のランディングページ",
-            "work_modalSkill": "HTML/CSS/JavaScript",
-            "work_modalLink": "https://traveler20.github.io/kokopp/lp/",
-            "work_modalLinkText": "Webサイト"
-        }
-    ]
+    "work": {
+        "design": [
+            {
+                "work_modal": "2-5",
+                "work_img": "cording_portfolio",
+                "work_figcaption": "ポートフォリオ",
+                "work_modalTitle": "ポートフォリオサイト",
+                "work_modalSkill": "HTML/CSS/SCSS/JavaScript",
+                "work_modalLink": "https://traveler20.site/portfolio",
+                "work_modalLinkText": "Webサイト"
+            },
+            {
+                "work_modal": "2-1",
+                "work_img": "cording_traveler20",
+                "work_figcaption": "ホームページ",
+                "work_modalTitle": "個人事業主用に制作したホームページ",
+                "work_modalSkill": "HTML/CSS/SCSS/JavaScript/WordPress",
+                "work_modalLink": "https://traveler20.site",
+                "work_modalLinkText": "Webサイト"
+            },
+            {
+                "work_modal": "2-2",
+                "work_img": "cording_lp-plant",
+                "work_figcaption": "ランディングページ",
+                "work_modalTitle": "観葉植物通販サイトのランディングページ",
+                "work_modalSkill": "HTML/CSS/SCSS/JavaScript/jQuery",
+                "work_modalLink": "https://traveler20.github.io/wdlanding/",
+                "work_modalLinkText": "Webサイト"
+            },
+            {
+                "work_modal": "2-3",
+                "work_img": "cording_topic-tonomine",
+                "work_figcaption": "特集サイト",
+                "work_modalTitle": "砥峰高原特集サイト",
+                "work_modalSkill": "HTML/CSS/JavaScript",
+                "work_modalLink": "https://traveler20.github.io/TonominePlateau/",
+                "work_modalLinkText": "Webサイト"
+            },
+            {
+                "work_modal": "2-4",
+                "work_img": "cording_lp-kokopp",
+                "work_figcaption": "ランディングページ",
+                "work_modalTitle": "アプリ「ここっぷ」のランディングページ",
+                "work_modalSkill": "HTML/CSS/JavaScript",
+                "work_modalLink": "https://traveler20.github.io/kokopp/lp/",
+                "work_modalLinkText": "Webサイト"
+            }
+        ],
+        "cording": [
+            {
+                "work_modal": "1",
+                "work_img": "cording_traveler20",
+                "work_figcaption": "ホームページ",
+                "work_modalTitle": "個人事業主用に制作したホームページ",
+                "work_modalSkill": "HTML/CSS/SCSS/JavaScript/WordPress",
+                "work_modalLink": "https://traveler20.site",
+                "work_modalLinkText": "Webサイト"
+            },
+            {
+                "work_modal": "2",
+                "work_img": "cording_lp-plant",
+                "work_figcaption": "ランディングページ",
+                "work_modalTitle": "観葉植物通販サイトのランディングページ",
+                "work_modalSkill": "HTML/CSS/SCSS/JavaScript/jQuery",
+                "work_modalLink": "https://traveler20.github.io/wdlanding/",
+                "work_modalLinkText": "Webサイト"
+            },
+            {
+                "work_modal": "3",
+                "work_img": "cording_topic-tonomine",
+                "work_figcaption": "特集サイト",
+                "work_modalTitle": "砥峰高原特集サイト",
+                "work_modalSkill": "HTML/CSS/JavaScript",
+                "work_modalLink": "https://traveler20.github.io/TonominePlateau/",
+                "work_modalLinkText": "Webサイト"
+            },
+            {
+                "work_modal": "4",
+                "work_img": "cording_lp-kokopp",
+                "work_figcaption": "ランディングページ",
+                "work_modalTitle": "アプリ「ここっぷ」のランディングページ",
+                "work_modalSkill": "HTML/CSS/JavaScript",
+                "work_modalLink": "https://traveler20.github.io/kokopp/lp/",
+                "work_modalLinkText": "Webサイト"
+            },
+            {
+                "work_modal": "5",
+                "work_img": "cording_portfolio",
+                "work_figcaption": "ポートフォリオ",
+                "work_modalTitle": "ポートフォリオサイト",
+                "work_modalSkill": "HTML/CSS/SCSS/JavaScript",
+                "work_modalLink": "https://traveler20.site/portfolio",
+                "work_modalLinkText": "Webサイト"
+            }
+        ]
+    },
+    "about": {
+        "study": [
+            {
+                "about_link": "https://zenn.dev/yurukei20/articles/2b315c826be4d8",
+                "about_category": "Zenn",
+                "about_title": "【CDNのコピペあり】Google Fonts Iconsの導入・使い方・装飾など【保存版】"
+            },
+            {
+                "about_link": "https://zenn.dev/yurukei20/articles/fb09545140a366",
+                "about_category": "Zenn",
+                "about_title": "【脱JavaScript】HTMLとCSSでできるJavaScriptっぽい機能"
+            },
+            {
+                "about_link": "https://zenn.dev/yurukei20/articles/9741118bfb5ee0",
+                "about_category": "Zenn",
+                "about_title": "Google FormをHTML/CSSでデザインしたフォームで運用する方法"
+            }
+        ]
+    }
 }

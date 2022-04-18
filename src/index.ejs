@@ -187,25 +187,25 @@
                     <article class="l-section__block">
                         <h3 class="c-block-slideTitle">WEBサイトデザイン</h3>
                         <ul class="c-block-slide">
-                            <% for (let i in work_design) { %>
+                            <% for (let i in work.design) { %>
                             <li class="c-block-slide__list">
                                 <figure
                                     class="c-block-slide__figure"
-                                    data-modal-open="modal-<%- work_design[i].work_modal %>"
+                                    data-modal-open="modal-<%- work.design[i].work_modal %>"
                                 >
                                     <img
-                                        src="./asset/img/work/<%- work_design[i].work_img %>.webp"
+                                        src="./asset/img/work/<%- work.design[i].work_img %>.webp"
                                         alt=""
                                     />
                                     <figcaption
                                         class="c-block-slide__figcaption"
                                     >
-                                        <%- work_design[i].work_figcaption %>
+                                        <%- work.design[i].work_figcaption %>
                                     </figcaption>
                                 </figure>
                                 <article
                                     class="c-block-slide__modal"
-                                    data-modal="modal-<%- work_design[i].work_modal %>"
+                                    data-modal="modal-<%- work.design[i].work_modal %>"
                                 >
                                     <div class="c-block-slide__mask"></div>
                                     <div class="c-block-slide__window">
@@ -213,28 +213,28 @@
                                             <dt>
                                                 <img
                                                     class="c-block-slide__img"
-                                                    src="./asset/img/work/<%- work_design[i].work_img %>.webp"
+                                                    src="./asset/img/work/<%- work.design[i].work_img %>.webp"
                                                     alt=""
                                                 />
                                             </dt>
                                             <dd>
                                                 <h3>
                                                     <%-
-                                                    work_design[i].work_modalTitle
+                                                    work.design[i].work_modalTitle
                                                     %>
                                                 </h3>
                                                 <p>
                                                     <%-
-                                                    work_design[i].work_modalSkill
+                                                    work.design[i].work_modalSkill
                                                     %>
                                                 </p>
                                                 <p>
                                                     <a
-                                                        href="<%- work_design[i].work_modalLink %>"
+                                                        href="<%- work.design[i].work_modalLink %>"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         ><%-
-                                                        work_design[i].work_modalLinkText
+                                                        work.design[i].work_modalLinkText
                                                         %></a
                                                     >
                                                 </p>
@@ -252,25 +252,25 @@
                     <article class="l-section__block">
                         <h3 class="c-block-slideTitle">コーディング実装</h3>
                         <ul class="c-block-slide">
-                            <% for (let i in work_cording) { %>
+                            <% for (let i in work.cording) { %>
                             <li class="c-block-slide__list">
                                 <figure
                                     class="c-block-slide__figure"
-                                    data-modal-open="modal-<%- work_cording[i].work_modal %>"
+                                    data-modal-open="modal-<%- work.cording[i].work_modal %>"
                                 >
                                     <img
-                                        src="./asset/img/work/<%- work_cording[i].work_img %>.webp"
+                                        src="./asset/img/work/<%- work.cording[i].work_img %>.webp"
                                         alt=""
                                     />
                                     <figcaption
                                         class="c-block-slide__figcaption"
                                     >
-                                        <%- work_cording[i].work_figcaption %>
+                                        <%- work.cording[i].work_figcaption %>
                                     </figcaption>
                                 </figure>
                                 <article
                                     class="c-block-slide__modal"
-                                    data-modal="modal-<%- work_cording[i].work_modal %>"
+                                    data-modal="modal-<%- work.cording[i].work_modal %>"
                                 >
                                     <div class="c-block-slide__mask"></div>
                                     <div class="c-block-slide__window">
@@ -278,28 +278,28 @@
                                             <dt>
                                                 <img
                                                     class="c-block-slide__img"
-                                                    src="./asset/img/work/<%- work_cording[i].work_img %>.webp"
+                                                    src="./asset/img/work/<%- work.cording[i].work_img %>.webp"
                                                     alt=""
                                                 />
                                             </dt>
                                             <dd>
                                                 <h3>
                                                     <%-
-                                                    work_cording[i].work_modalTitle
+                                                    work.cording[i].work_modalTitle
                                                     %>
                                                 </h3>
                                                 <p>
                                                     <%-
-                                                    work_cording[i].work_modalSkill
+                                                    work.cording[i].work_modalSkill
                                                     %>
                                                 </p>
                                                 <p>
                                                     <a
-                                                        href="<%- work_cording[i].work_modalLink %>"
+                                                        href="<%- work.cording[i].work_modalLink %>"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         ><%-
-                                                        work_cording[i].work_modalLinkText
+                                                        work.cording[i].work_modalLinkText
                                                         %></a
                                                     >
                                                 </p>
@@ -417,44 +417,21 @@
                     </article>
                     <article class="l-section__block">
                         <ul class="c-lists-news">
+                            <% for (let i in about.study) { %>
                             <li class="c-lists-news__list">
                                 <a
                                     class="c-lists-news__link"
-                                    href="https://zenn.dev/yurukei20/articles/2b315c826be4d8"
+                                    href="<%- about.study[i].about_link %>"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
                                     <span class="c-lists-news__category"
-                                        >Zenn</span
-                                    >【CDNのコピペあり】Google Fonts
-                                    Iconsの導入・使い方・装飾など【保存版】
+                                        ><%- about.study[i].about_category
+                                        %></span
+                                    ><%- about.study[i].about_title %>
                                 </a>
                             </li>
-                            <li class="c-lists-news__list">
-                                <a
-                                    class="c-lists-news__link"
-                                    href="https://zenn.dev/yurukei20/articles/fb09545140a366"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <span class="c-lists-news__category"
-                                        >Zenn</span
-                                    >【脱JavaScript】HTMLとCSSでできるJavaScriptっぽい機能
-                                </a>
-                            </li>
-                            <li class="c-lists-news__list">
-                                <a
-                                    class="c-lists-news__link"
-                                    href="https://zenn.dev/yurukei20/articles/9741118bfb5ee0"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <span class="c-lists-news__category"
-                                        >Zenn</span
-                                    >Google
-                                    FormをHTML/CSSでデザインしたフォームで運用する方法
-                                </a>
-                            </li>
+                            <% } %>
                         </ul>
                     </article>
                     <!-- <article class="l-section__block">
