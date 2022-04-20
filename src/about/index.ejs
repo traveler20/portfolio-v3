@@ -19,11 +19,17 @@
                 </div>
             </section>
 
-            <!-- #skill -->
-            <section id="skill" class="p-page-section">
+            <section>
+                <!-- .c-profile -->
+                <%- include('./../_component/_profile',{path:path,}) %>
+                <!-- /.c-profile -->
+            </section>
+
+            <!-- #about -->
+            <section id="about" class="p-page-section">
                 <div class="p-page-section__inner l-section__inner">
-                    <article class="">
-                        <h2 class="p-page-section__title">自己紹介</h2>
+                    <article class="p-page-section__block">
+                        <h2>自己紹介</h2>
                         <p>
                             自身のスキルであるWEBサイトデザイン、WEBサイトコーディング・構築スキルを用いて課題解決できるよう尽力します。
                         </p>
@@ -31,18 +37,60 @@
                             ただの外注先のWEBデザイナーではなく、事業のパートナーとして事業の課題解決につながるクリエイティブ制作をこころがけています。
                         </p>
                     </article>
-                    <article class="l-section__block">
-                        <h2 class="p-page-section__title">自己紹介</h2>
+                    <article class="p-page-section__block">
+                        <h2>自己紹介</h2>
                         <p>
                             自身のスキルであるWEBサイトデザイン、WEBサイトコーディング・構築スキルを用いて課題解決できるよう尽力します。
                         </p>
                         <p>
                             ただの外注先のWEBデザイナーではなく、事業のパートナーとして事業の課題解決につながるクリエイティブ制作をこころがけています。
                         </p>
+                    </article>
+                    <article class="p-page-section__block">
+                        <h1>見出しテキスト</h1>
+                        <h2>見出し</h2>
+                        <p>
+                            複素数体であれば、任意のCM-タイプのAは、実際、数体である定義体（英語版）(fieldofdefinition)を持つ。自己準同型環の可能なタイプは、対合（ロサチの対合（英語版）(Rosatiinvolution）をもつ環として既に分類される。
+                        </p>
+                        <ul>
+                            <li>
+                                リスト1
+                                <ul>
+                                    <li>リスト1-1(左側にタブ)</li>
+                                </ul>
+                            </li>
+                            <li>リスト2</li>
+                        </ul>
+                        <blockquote>
+                            <p>"引用引用引用引用 引用引用"</p>
+                        </blockquote>
+                        <hr />
+                        <h2>見出し</h2>
+                        <p>上に水平線</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th align="right">名前</th>
+                                    <th align="center">年齢</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td align="right">山田</td>
+                                    <td align="center">24</td>
+                                </tr>
+                                <tr>
+                                    <td align="right">田中</td>
+                                    <td align="center">48</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><strong>強調</strong></p>
+                        <p><a href="https://www.google.com/">リンク</a></p>
                     </article>
                 </div>
             </section>
-            <!-- /#skill -->
+            <!-- /#about -->
 
             <!-- #contact -->
             <%- include('./../_common/_contact',{path:path,}) %>

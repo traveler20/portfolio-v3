@@ -212,55 +212,6 @@
     }
 }
 
-.p-home-about {
-    &__figure {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 40px 20px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        background-color: $c-base-lightGray;
-        box-shadow: 0 4px 4px -4px rgba($color: $c-base-black, $alpha: 0.6);
-        border-radius: 2px;
-    }
-    &__picture {
-        width: 180px;
-        height: 180px;
-    }
-    &__caption {
-        max-width: 560px;
-    }
-
-    &__links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 12px;
-    }
-    &__icon {
-        display: inline-block;
-        width: 32px;
-
-        color: $c-base-darkGray;
-        &:hover {
-            color: $c-base-black;
-        }
-    }
-
-    @include breakpoint(tablet) {
-        &__figure {
-            flex-direction: row;
-            justify-content: center;
-            gap: 64px;
-        }
-    }
-    @include breakpoint(pc) {
-    }
-}
-
 .p-home-work {
     color: $c-body-white;
     background-color: $c-base-black;

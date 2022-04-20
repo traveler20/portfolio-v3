@@ -40,13 +40,15 @@
         z-index: 1;
     }
     &__inner {
-        @include content-maxwidth();
+        @include content-maxwidth(1000px);
         margin: 0 auto;
-        padding: 24px 20px 24px;
+        padding: 24px 0px 24px;
     }
     &__subtitle {
         @include noto-sans();
         font-size: 4.4rem;
+        // color: $c-base-darkGray;
+        -webkit-text-stroke: 1px $c-base-white;
     }
     &__title {
         font-weight: bold;
@@ -60,12 +62,65 @@
         @include content-maxwidth(800px);
         margin: 0 auto;
     }
-    &__title {
-        font-size: 24px;
-        font-weight: bold;
-        border-left: solid 4px $c-base-black;
-        border-radius: 2px;
-        padding: 2px 8px;
-        margin: 0 0 8px;
+
+    &__block {
+        margin: 40px auto 0;
+        &:first-of-type {
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 0 24px;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            border-left: solid 4px $c-base-black;
+            border-radius: 2px;
+            padding: 2px 8px;
+            margin: 0 0 20px;
+        }
+        p {
+            margin: 0 0 16px;
+        }
+        ul {
+            margin: 0 0 16px;
+            list-style: disc;
+            padding: 0 0 0 24px;
+        }
+        blockquote {
+            margin: 0 12px 16px;
+            padding: 4px 4px 4px 8px;
+            border-left: solid 4px $c-base-darkGray;
+            p {
+                margin: 0;
+            }
+        }
+        hr {
+            margin: 32px 0;
+            // border-top: solid 2px $c-base-darkGray;
+            border-top: solid 2px transparent;
+        }
+        table {
+            margin: 24px 0;
+            tr {
+                display: table-row;
+            }
+            th,
+            td {
+                text-align: left;
+
+                border-bottom: solid 1px $c-base-darkGray;
+                padding: 8px 4px;
+                &:first-of-type {
+                    width: 160px;
+                }
+                &:nth-of-type(2) {
+                    // width: calc(100% - 160px);
+                    width: 78%;
+                }
+            }
+        }
     }
 }
