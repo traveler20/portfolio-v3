@@ -24,9 +24,6 @@
         font-size: 16px;
         border: solid 1px s.$c-body-black;
         border-radius: 4px;
-        &:focus-visible {
-            outline: s.$c-primary auto 1px;
-        }
     }
     ul.c-form__input {
         border: none;

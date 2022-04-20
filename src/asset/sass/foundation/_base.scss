@@ -11,6 +11,13 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
+::selection {
+    background-color: rgba($color: $c-base-black, $alpha: 0.7);
+    color: $c-body-white;
+}
+*:focus-visible {
+    outline: $c-base-black auto 1px;
+}
 html {
     font-size: 62.5%;
     line-height: 1.6;
@@ -28,10 +35,6 @@ body {
     min-width: 350px;
     width: 100%;
     overflow-x: hidden;
-}
-::selection {
-    background-color: rgba($color: $c-base-black, $alpha: 0.7);
-    color: $c-body-white;
 }
 
 img,

@@ -227,18 +227,27 @@
         border-radius: 2px;
     }
     &__picture {
-        display: block;
-        width: 200px;
-        height: 200px;
-        transform: rotate(-19deg);
-
-        img {
-            border-radius: 43% 57% 43% 57% / 57% 43% 57% 43%;
-            transform: rotate(19deg);
-        }
+        width: 180px;
+        height: 180px;
     }
     &__caption {
         max-width: 560px;
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+    }
+    &__icon {
+        display: inline-block;
+        width: 32px;
+
+        color: $c-base-darkGray;
+        &:hover {
+            color: $c-base-black;
+        }
     }
 
     @include breakpoint(tablet) {
