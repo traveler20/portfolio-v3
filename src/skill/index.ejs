@@ -7,7 +7,7 @@
         %>
     </head>
     <body>
-        <%- include('./../_common/_header',{path:path,}) %>
+        <%- include('./../_common/_header',{path:path,url:data.url,}) %>
 
         <!-- main -->
         <main>
@@ -15,24 +15,27 @@
             <section class="p-page-fv--title">
                 <div class="p-page-fv__inner">
                     <h2 class="p-page-fv__subtitle">skill</h2>
-                    <h1 class="p-page-fv__title">ゆるけーについて</h1>
+                    <h1 class="p-page-fv__title">スキルセット</h1>
                 </div>
             </section>
 
+            <section class="pb-20">
+                <!-- .c-skill -->
+                <%- include('./_component/_skill',{path:path,}) %>
+                <!-- /.c-skill -->
+            </section>
+
             <!-- #skill -->
-            <section id="skill" class="p-page-section">
+            <!-- <section id="skill" class="p-page-section">
                 <div class="p-page-section__inner l-section__inner">
                     <article class="p-page-section__block">
-                        <h2>自己紹介</h2>
+                        <h2>自分にできること</h2>
                         <p>
-                            自身のスキルであるWEBサイトデザイン、WEBサイトコーディング・構築スキルを用いて課題解決できるよう尽力します。
-                        </p>
-                        <p>
-                            ただの外注先のWEBデザイナーではなく、事業のパートナーとして事業の課題解決につながるクリエイティブ制作をこころがけています。
+                            サイト設計からワイヤーフレーム・デザイン、コーディング、ホームページの管理・運用まで担当できます。
                         </p>
                     </article>
                 </div>
-            </section>
+            </section> -->
             <!-- /#skill -->
 
             <!-- #contact -->
