@@ -1,0 +1,46 @@
+<%_ const path='./../'; _%>
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- meta -->
+        <%- include('./../_common/_head', { path:path,meta:data.meta['work'],})
+        %>
+    </head>
+    <body>
+        <%- include('./../_common/_header',{path:path,}) %>
+
+        <!-- main -->
+        <main>
+            <section class="p-page-fv"></section>
+            <section class="p-page-fv--title">
+                <div class="p-page-fv__inner">
+                    <h2 class="p-page-fv__subtitle">work</h2>
+                    <h1 class="p-page-fv__title">ゆるけーについて</h1>
+                </div>
+            </section>
+
+            <!-- #work -->
+            <section id="work" class="p-page-section">
+                <div class="p-page-section__inner l-section__inner">
+                    <article class="p-page-section__block">
+                        <h2>自己紹介</h2>
+                        <p>
+                            自身のスキルであるWEBサイトデザイン、WEBサイトコーディング・構築スキルを用いて課題解決できるよう尽力します。
+                        </p>
+                        <p>
+                            ただの外注先のWEBデザイナーではなく、事業のパートナーとして事業の課題解決につながるクリエイティブ制作をこころがけています。
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <!-- /#work -->
+
+            <!-- #contact -->
+            <%- include('./../_common/_contact',{path:path,}) %>
+            <!-- /#contact -->
+        </main>
+        <!-- /main -->
+
+        <%- include('./../_common/_footer',{path:path,}) %>
+    </body>
+</html>

@@ -8,10 +8,29 @@
                 "title": "ゆるけーのホームページ｜デザイン・コーディングから管理・運用を担います。",
                 "description": "デザインからコーディング、ホームページの更新・管理・運用まで。ホームページ制作・運用に関してすべておまかせください。"
             },
+            "feature": {
+                "title": "FEATURE - 特長",
+                "description": "WEBデザイナー・WEBディベロッパーであるゆるけーのホームページです。",
+                "url": "feature"
+            },
+            "skill": {
+                "title": "SKILL - スキルセット",
+                "description": "WEBデザイナー・WEBディベロッパーであるゆるけーのホームページです。",
+                "url": "skill"
+            },
+            "work": {
+                "title": "WORK - 実績一覧",
+                "description": "WEBデザイナー・WEBディベロッパーであるゆるけーのホームページです。",
+                "url": "work"
+            },
             "about": {
-                "title": "ABOUT - ゆるけーについて",
+                "title": "ABOUT - プロフィール",
                 "description": "WEBデザイナー・WEBディベロッパーであるゆるけーのホームページです。",
                 "url": "about"
+            },
+            "404": {
+                "title": "404 - ページは見つかりませんでした",
+                "description": "WEBデザイナー・WEBディベロッパーであるゆるけーのホームページです。"
             }
         }
     },

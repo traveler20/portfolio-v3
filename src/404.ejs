@@ -1,0 +1,42 @@
+<%_ const path='./'; _%>
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- meta -->
+        <%- include('./_common/_head', { path:path,meta:data.meta['404'],})%>
+    </head>
+    <body>
+        <%- include('./_common/_header',{path:path,}) %>
+
+        <!-- main -->
+        <main>
+            <section class="p-page-fv"></section>
+            <section class="p-page-fv--title">
+                <div class="p-page-fv__inner">
+                    <h2 class="p-page-fv__subtitle">404</h2>
+                    <h1 class="p-page-fv__title">
+                        ページが見つかりませんでした
+                    </h1>
+                </div>
+            </section>
+
+            <section class="p-page-section">
+                <div class="p-page-section__inner l-section__inner">
+                    <article class="p-page-section__block">
+                        <p>
+                            当サイトをご覧頂きありがとうございます。<br />申し訳ありませんが、アクセスしようとした記事は削除されたかURLが変更されています。
+                        </p>
+                        <p>個別のご質問等あればお問い合わせください。</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- #contact -->
+            <%- include('./_common/_contact',{path:path,}) %>
+            <!-- /#contact -->
+        </main>
+        <!-- /main -->
+
+        <%- include('./_common/_footer',{path:path,}) %>
+    </body>
+</html>

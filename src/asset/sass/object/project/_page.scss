@@ -35,18 +35,18 @@
 
     &--title {
         background-color: transparent;
-        margin: -64px 0 0;
+        margin: -72px 0 0;
         position: relative;
         z-index: 1;
     }
     &__inner {
         @include content-maxwidth(1000px);
         margin: 0 auto;
-        padding: 24px 0px 24px;
+        padding: 24px 20px 24px;
     }
     &__subtitle {
         @include noto-sans();
-        font-size: 4.4rem;
+        font-size: 5.6rem;
         // color: $c-base-darkGray;
         -webkit-text-stroke: 1px $c-base-white;
     }
