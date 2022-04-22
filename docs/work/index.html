@@ -93,10 +93,16 @@
                 </div>
             </section>
 
+            <!-- 個別記事を表示する部分 -->
+            <section class="p-page-section">
+                <div class="js-cms-article"></div>
+            </section>
+
             <!-- #work -->
             <section id="work" class="p-page-section">
                 <div class="p-page-section__inner l-section__inner">
                     <article class="p-page-section__block">
+                        <h2>制作実績の一覧</h2>
                         <p>当サイトにて掲載できる実績の一覧になります。</p>
                         <p>
                             Web上に掲載できる制作例はごく一部のため、さらに実績をお知りになりたい方は<a
@@ -104,6 +110,10 @@
                                 >お問い合わせ</a
                             >くださいませ。
                         </p>
+                    </article>
+                    <article class="l-section__block">
+                        <!-- 記事一覧を表示する部分 -->
+                        <ul class="js-cms-list c-lists-news"></ul>
                     </article>
                 </div>
             </section>
@@ -297,5 +307,73 @@
         <!-- /.l-footer -->
 
         <script src="./../asset/js/script.js"></script>
+
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            $(function () {
+                $.ajax({
+                    url: "https://traveler20.microcms.io/api/v1/news",
+                    type: "GET",
+                    dataType: "json",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-MICROCMS-API-KEY":
+                            "86854f9d1fba4a5a8a9cbadc5ed7ee8a8b80",
+                    },
+                })
+                    .done(function (data) {
+                        var article = "";
+                        var lines = "";
+
+                        // 各値の取得
+                        $.each(data.contents, function (index, value) {
+                            var date = value.publishedAt.slice(0, 10);
+                            var title = value.title;
+                            var body = value.content;
+                            var category = value.category.name;
+                            // var image = value.image.url;
+                            var id = value.id;
+
+                            // 個別記事のHTMLを生成
+                            var article_id = location.search.slice(4, 20);
+                            if (id === article_id) {
+                                article =
+                                    '<article class="p-page-cmsarticle"><h1>' +
+                                    title +
+                                    '</h1>\
+                        <time datetime="' +
+                                    date +
+                                    '">' +
+                                    date +
+                                    "</time>\
+                        <div>" +
+                                    body +
+                                    '</div><a class="p-page-cmsarticle__button" href="./">実績一覧に戻る</a><hr></article>';
+                                $(".js-cms-article").html(article);
+                            }
+
+                            // 記事一覧のHTMLを生成
+                            lines +=
+                                '<li class="c-lists-news__list">\
+                                    <a class="c-lists-news__link" href="./?id=' +
+                                id +
+                                '">' +
+                                '<span class="c-lists-news__category">' +
+                                category +
+                                "</span>" +
+                                title +
+                                "</a></li>";
+                        });
+                        $(".js-cms-list").html(lines);
+                    })
+                    .fail(function () {
+                        console.log("failed");
+                    });
+            });
+        </script>
     </body>
 </html>
