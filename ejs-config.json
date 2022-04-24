@@ -33,6 +33,16 @@
                 "description": "WEBデザイナー・WEBディベロッパーであるゆるけーのホームページです。",
                 "url": "about"
             },
+            "policy": {
+                "title": "policy - プライバシーポリシー",
+                "description": "WEBデザイナー・WEBディベロッパーであるゆるけーのホームページです。",
+                "url": "policy"
+            },
+            "rule": {
+                "title": "rule - 利用規約",
+                "description": "WEBデザイナー・WEBディベロッパーであるゆるけーのホームページです。",
+                "url": "rule"
+            },
             "404": {
                 "title": "404 - ページは見つかりませんでした",
                 "description": "WEBデザイナー・WEBディベロッパーであるゆるけーのホームページです。"
