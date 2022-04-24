@@ -52,55 +52,136 @@
     "work": {
         "design": [
             {
+                "work_modal": "2-1",
+                "work_img": "design_01",
+                "work_figcaption": "メディアサイト",
+                "work_modalTitle": "キャンプメディアサイト",
+                "work_modalSkill": "Figma",
+                "work_modalLink": "",
+                "work_modalLinkText": ""
+            },
+            {
+                "work_modal": "2-2",
+                "work_img": "design_02",
+                "work_figcaption": "ホームページ",
+                "work_modalTitle": "日本茶ショップHP",
+                "work_modalSkill": "Figma",
+                "work_modalLink": "",
+                "work_modalLinkText": ""
+            },
+            {
+                "work_modal": "2-3",
+                "work_img": "design_03",
+                "work_figcaption": "ホームページ",
+                "work_modalTitle": "幼稚園HP",
+                "work_modalSkill": "Figma",
+                "work_modalLink": "",
+                "work_modalLinkText": ""
+            },
+            {
+                "work_modal": "2-4",
+                "work_img": "design_04",
+                "work_figcaption": "ホームページ",
+                "work_modalTitle": "企業ホームページ",
+                "work_modalSkill": "Figma",
+                "work_modalLink": "",
+                "work_modalLinkText": ""
+            },
+            {
                 "work_modal": "2-5",
-                "work_img": "cording_portfolio",
+                "work_img": "design_05",
+                "work_figcaption": "ホームページ",
+                "work_modalTitle": "スムージーショップHP",
+                "work_modalSkill": "Figma",
+                "work_modalLink": "",
+                "work_modalLinkText": ""
+            },
+            {
+                "work_modal": "2-6",
+                "work_img": "design_06",
+                "work_figcaption": "ECサイト",
+                "work_modalTitle": "ファッションHP",
+                "work_modalSkill": "Figma",
+                "work_modalLink": "",
+                "work_modalLinkText": ""
+            },
+            {
+                "work_modal": "2-7",
+                "work_img": "design_07",
+                "work_figcaption": "ランディングページ",
+                "work_modalTitle": "講演会LP",
+                "work_modalSkill": "Figma",
+                "work_modalLink": "",
+                "work_modalLinkText": ""
+            },
+            {
+                "work_modal": "2-8",
+                "work_img": "design_08",
+                "work_figcaption": "ホームページ",
+                "work_modalTitle": "日本旅館HP",
+                "work_modalSkill": "Figma",
+                "work_modalLink": "",
+                "work_modalLinkText": ""
+            },
+            {
+                "work_modal": "2-9",
+                "work_img": "design_09",
+                "work_figcaption": "ホームページ",
+                "work_modalTitle": "リゾートHP",
+                "work_modalSkill": "Figma",
+                "work_modalLink": "",
+                "work_modalLinkText": ""
+            },
+            {
+                "work_modal": "2-10",
+                "work_img": "design_10",
+                "work_figcaption": "ホームページ",
+                "work_modalTitle": "受託開発会社HP",
+                "work_modalSkill": "Figma",
+                "work_modalLink": "",
+                "work_modalLinkText": ""
+            },
+            {
+                "work_modal": "2-11",
+                "work_img": "design_11",
+                "work_figcaption": "ホームページ",
+                "work_modalTitle": "美容院HP",
+                "work_modalSkill": "Adobe XD",
+                "work_modalLink": "",
+                "work_modalLinkText": ""
+            },
+            {
+                "work_modal": "2-12",
+                "work_img": "cd_02",
                 "work_figcaption": "ポートフォリオ",
                 "work_modalTitle": "ポートフォリオサイト",
-                "work_modalSkill": "HTML/CSS/SCSS/JavaScript",
+                "work_modalSkill": "Figma",
                 "work_modalLink": "https://traveler20.site/portfolio",
                 "work_modalLinkText": "Webサイト"
             },
             {
-                "work_modal": "2-1",
-                "work_img": "cording_traveler20",
+                "work_modal": "2-13",
+                "work_img": "cd_01",
                 "work_figcaption": "ホームページ",
                 "work_modalTitle": "個人事業主用に制作したホームページ",
-                "work_modalSkill": "HTML/CSS/SCSS/JavaScript/WordPress",
+                "work_modalSkill": "Figma",
                 "work_modalLink": "https://traveler20.site",
                 "work_modalLinkText": "Webサイト"
             },
             {
-                "work_modal": "2-2",
-                "work_img": "cording_lp-plant",
-                "work_figcaption": "ランディングページ",
-                "work_modalTitle": "観葉植物通販サイトのランディングページ",
-                "work_modalSkill": "HTML/CSS/SCSS/JavaScript/jQuery",
-                "work_modalLink": "https://traveler20.github.io/wdlanding/",
-                "work_modalLinkText": "Webサイト"
-            },
-            {
-                "work_modal": "2-3",
-                "work_img": "cording_topic-tonomine",
-                "work_figcaption": "特集サイト",
-                "work_modalTitle": "砥峰高原特集サイト",
-                "work_modalSkill": "HTML/CSS/JavaScript",
-                "work_modalLink": "https://traveler20.github.io/TonominePlateau/",
-                "work_modalLinkText": "Webサイト"
-            },
-            {
-                "work_modal": "2-4",
-                "work_img": "cording_lp-kokopp",
+                "work_modal": "2-14",
+                "work_img": "cd_06",
                 "work_figcaption": "ランディングページ",
                 "work_modalTitle": "アプリ「ここっぷ」のランディングページ",
-                "work_modalSkill": "HTML/CSS/JavaScript",
+                "work_modalSkill": "Adobe XD",
                 "work_modalLink": "https://traveler20.github.io/kokopp/lp/",
                 "work_modalLinkText": "Webサイト"
             }
         ],
         "cording": [
             {
-                "work_modal": "1",
-                "work_img": "cording_traveler20",
+                "work_modal": "1-1",
+                "work_img": "cd_01",
                 "work_figcaption": "ホームページ",
                 "work_modalTitle": "個人事業主用に制作したホームページ",
                 "work_modalSkill": "HTML/CSS/SCSS/JavaScript/WordPress",
@@ -108,8 +189,8 @@
                 "work_modalLinkText": "Webサイト"
             },
             {
-                "work_modal": "2",
-                "work_img": "cording_lp-plant",
+                "work_modal": "1-2",
+                "work_img": "cording_01",
                 "work_figcaption": "ランディングページ",
                 "work_modalTitle": "観葉植物通販サイトのランディングページ",
                 "work_modalSkill": "HTML/CSS/SCSS/JavaScript/jQuery",
@@ -117,8 +198,8 @@
                 "work_modalLinkText": "Webサイト"
             },
             {
-                "work_modal": "3",
-                "work_img": "cording_topic-tonomine",
+                "work_modal": "1-3",
+                "work_img": "cd_07",
                 "work_figcaption": "特集サイト",
                 "work_modalTitle": "砥峰高原特集サイト",
                 "work_modalSkill": "HTML/CSS/JavaScript",
@@ -126,8 +207,8 @@
                 "work_modalLinkText": "Webサイト"
             },
             {
-                "work_modal": "4",
-                "work_img": "cording_lp-kokopp",
+                "work_modal": "1-4",
+                "work_img": "cd_06",
                 "work_figcaption": "ランディングページ",
                 "work_modalTitle": "アプリ「ここっぷ」のランディングページ",
                 "work_modalSkill": "HTML/CSS/JavaScript",
@@ -135,12 +216,84 @@
                 "work_modalLinkText": "Webサイト"
             },
             {
-                "work_modal": "5",
-                "work_img": "cording_portfolio",
+                "work_modal": "1-5",
+                "work_img": "cd_02",
                 "work_figcaption": "ポートフォリオ",
                 "work_modalTitle": "ポートフォリオサイト",
                 "work_modalSkill": "HTML/CSS/SCSS/JavaScript",
                 "work_modalLink": "https://traveler20.site/portfolio",
+                "work_modalLinkText": "Webサイト"
+            },
+            {
+                "work_modal": "1-6",
+                "work_img": "cd_03",
+                "work_figcaption": "ホームページ",
+                "work_modalTitle": "制作会社ホームページ",
+                "work_modalSkill": "gulp/Dart Sass/EJS",
+                "work_modalLink": "https://traveler20.github.io/tra",
+                "work_modalLinkText": "Webサイト"
+            },
+            {
+                "work_modal": "1-7",
+                "work_img": "cd_04",
+                "work_figcaption": "特集サイト",
+                "work_modalTitle": "和風サイト",
+                "work_modalSkill": "gulp/Dart Sass/EJS",
+                "work_modalLink": "https://traveler20.github.io/newyear",
+                "work_modalLinkText": "Webサイト"
+            },
+            {
+                "work_modal": "1-8",
+                "work_img": "cd_05",
+                "work_figcaption": "ホームページ",
+                "work_modalTitle": "カフェのホームページ",
+                "work_modalSkill": "gulp/Dart Sass/EJS",
+                "work_modalLink": "https://traveler20.github.io/cafe",
+                "work_modalLinkText": "Webサイト"
+            },
+            {
+                "work_modal": "1-9",
+                "work_img": "cd_08",
+                "work_figcaption": "ポートフォリオ",
+                "work_modalTitle": "ポートフォリオサイト",
+                "work_modalSkill": "gulp/Dart Sass/EJS",
+                "work_modalLink": "https://yurukei-career.com/work",
+                "work_modalLinkText": "Webサイト"
+            },
+            {
+                "work_modal": "1-10",
+                "work_img": "cd_09",
+                "work_figcaption": "メディアサイト",
+                "work_modalTitle": "キャリア系ブログサイト",
+                "work_modalSkill": "WordPress/CSS（自作スキン）",
+                "work_modalLink": "https://yurukei-career.com",
+                "work_modalLinkText": "Webサイト"
+            },
+            {
+                "work_modal": "1-11",
+                "work_img": "cd_10",
+                "work_figcaption": "ランディングページ",
+                "work_modalTitle": "書籍紹介LP",
+                "work_modalSkill": "HTML/CSS/SCSS",
+                "work_modalLink": "https://traveler20.github.io/practice/00",
+                "work_modalLinkText": "Webサイト"
+            },
+            {
+                "work_modal": "1-12",
+                "work_img": "cd_11",
+                "work_figcaption": "ランディングページ",
+                "work_modalTitle": "コンサルLP",
+                "work_modalSkill": "HTML/CSS",
+                "work_modalLink": "https://traveler20.github.io/practice/04",
+                "work_modalLinkText": "Webサイト"
+            },
+            {
+                "work_modal": "1-13",
+                "work_img": "cd_12",
+                "work_figcaption": "ホームページ",
+                "work_modalTitle": "飲食店HP",
+                "work_modalSkill": "HTML/CSS",
+                "work_modalLink": "https://traveler20.github.io/practice/03",
                 "work_modalLinkText": "Webサイト"
             }
         ]
