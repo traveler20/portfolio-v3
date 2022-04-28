@@ -11,7 +11,7 @@ jobs:
     name: Upload Production
     runs-on: ubuntu-latest
     steps:
-        - uses: actions/checkout@v2
+        - uses: actions/checkout@master
         - name: Upload Production
           uses: SamKirkland/FTP-Deploy-Action@2.0.0
           env:
