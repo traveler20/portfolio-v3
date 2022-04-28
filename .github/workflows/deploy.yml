@@ -8,7 +8,7 @@ on:
 name: Deploy
 jobs:
     production:
-    name: Upload Production
+    name: Upload 
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@master
