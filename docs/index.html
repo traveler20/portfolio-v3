@@ -52,7 +52,7 @@
         <!-- css -->
         <link rel="stylesheet" href="./asset/css/style.css" />
     </head>
-    <body>
+    <body id="page-top">
         <!-- .c-loading -->
         <article class="c-loading" id="js-loading">
             <div class="c-loading__spinner"></div>
@@ -105,31 +105,11 @@
                         class="l-header__navClose"
                     ></label>
                     <ul class="l-header__navLists js-navLists">
-                        <li>
-                            <a href="https://yurukei-career.com/work/feature"
-                                >特長</a
-                            >
-                        </li>
-                        <li>
-                            <a href="https://yurukei-career.com/work/skill"
-                                >スキル</a
-                            >
-                        </li>
-                        <li>
-                            <a href="https://yurukei-career.com/work/work"
-                                >実績</a
-                            >
-                        </li>
-                        <li>
-                            <a href="https://yurukei-career.com/work/service"
-                                >サービス</a
-                            >
-                        </li>
-                        <li>
-                            <a href="https://yurukei-career.com/work/about"
-                                >プロフィール</a
-                            >
-                        </li>
+                        <li><a href="#feature">特長</a></li>
+                        <li><a href="#skill">スキル</a></li>
+                        <li><a href="#work">実績</a></li>
+                        <li><a href="#service">サービス</a></li>
+                        <li><a href="#about">プロフィール</a></li>
                     </ul>
                 </nav>
             </div>
@@ -337,11 +317,116 @@
                         実績
                     </h2>
                     <p class="c-text-lead">
-                        制作実績になります。実績の詳細をPDFスライドでもまとめていますのでお問い合わせください。
+                        制作実績になります。WEB上に掲載できる制作例はごく一部のため、さらに実績をお知りになりたい方は<a
+                            href="#contact"
+                            >お問い合わせ</a
+                        >くださいませ。
                     </p>
                     <article class="l-section__block">
                         <h3 class="c-block-slideTitle">WEBサイトデザイン</h3>
                         <ul class="c-block-slide">
+                            <li class="c-block-slide__list">
+                                <figure
+                                    class="c-block-slide__figure"
+                                    data-modal-open="modal-2-15"
+                                >
+                                    <img
+                                        src="https://traveler20.github.io/asset/img/work/job_design_iketeru_system.webp"
+                                        alt="ホームページデザイン"
+                                        loading="lazy"
+                                    />
+                                    <figcaption
+                                        class="c-block-slide__figcaption"
+                                    >
+                                        ランディングページ
+                                    </figcaption>
+                                </figure>
+                                <article
+                                    class="c-block-slide__modal"
+                                    data-modal="modal-2-15"
+                                >
+                                    <div class="c-block-slide__mask"></div>
+                                    <div class="c-block-slide__window">
+                                        <dl class="c-block-slide__dl">
+                                            <dt>
+                                                <img
+                                                    class="c-block-slide__img"
+                                                    src="https://traveler20.github.io/asset/img/work/job_design_iketeru_system.webp"
+                                                    alt="ホームページデザイン"
+                                                    loading="lazy"
+                                                />
+                                            </dt>
+                                            <dd>
+                                                <h3>イケテルシステムLP</h3>
+                                                <p>Figma</p>
+                                                <p>
+                                                    <a
+                                                        href="https://lp.iketeru-system.com/"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        >Webサイト</a
+                                                    >
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                        <div class="c-block-slide__close">
+                                            &times;
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+
+                            <li class="c-block-slide__list">
+                                <figure
+                                    class="c-block-slide__figure"
+                                    data-modal-open="modal-2-16"
+                                >
+                                    <img
+                                        src="https://traveler20.github.io/asset/img/work/job_cd_cubic_remoma.webp"
+                                        alt="ホームページデザイン"
+                                        loading="lazy"
+                                    />
+                                    <figcaption
+                                        class="c-block-slide__figcaption"
+                                    >
+                                        ランディングページ
+                                    </figcaption>
+                                </figure>
+                                <article
+                                    class="c-block-slide__modal"
+                                    data-modal="modal-2-16"
+                                >
+                                    <div class="c-block-slide__mask"></div>
+                                    <div class="c-block-slide__window">
+                                        <dl class="c-block-slide__dl">
+                                            <dt>
+                                                <img
+                                                    class="c-block-slide__img"
+                                                    src="https://traveler20.github.io/asset/img/work/job_cd_cubic_remoma.webp"
+                                                    alt="ホームページデザイン"
+                                                    loading="lazy"
+                                                />
+                                            </dt>
+                                            <dd>
+                                                <h3>リモマLP</h3>
+                                                <p>Figma</p>
+                                                <p>
+                                                    <a
+                                                        href="https://www.cubic-corp.net/remoma"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        >Webサイト</a
+                                                    >
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                        <div class="c-block-slide__close">
+                                            &times;
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+
                             <li class="c-block-slide__list">
                                 <figure
                                     class="c-block-slide__figure"
@@ -374,7 +459,9 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>キャンプメディアサイト</h3>
+                                                <h3>
+                                                    【個人制作】キャンプメディアサイト
+                                                </h3>
                                                 <p>Figma</p>
                                                 <p>
                                                     <a
@@ -424,7 +511,9 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>日本茶ショップHP</h3>
+                                                <h3>
+                                                    【個人制作】日本茶ショップHP
+                                                </h3>
                                                 <p>Figma</p>
                                                 <p>
                                                     <a
@@ -474,7 +563,7 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>幼稚園HP</h3>
+                                                <h3>【個人制作】幼稚園HP</h3>
                                                 <p>Figma</p>
                                                 <p>
                                                     <a
@@ -524,7 +613,9 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>企業ホームページ</h3>
+                                                <h3>
+                                                    【個人制作】企業ホームページ
+                                                </h3>
                                                 <p>Figma</p>
                                                 <p>
                                                     <a
@@ -574,7 +665,9 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>スムージーショップHP</h3>
+                                                <h3>
+                                                    【個人制作】スムージーショップHP
+                                                </h3>
                                                 <p>Figma</p>
                                                 <p>
                                                     <a
@@ -624,7 +717,9 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>ファッションHP</h3>
+                                                <h3>
+                                                    【個人制作】ファッションHP
+                                                </h3>
                                                 <p>Figma</p>
                                                 <p>
                                                     <a
@@ -674,7 +769,7 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>講演会LP</h3>
+                                                <h3>【個人制作】講演会LP</h3>
                                                 <p>Figma</p>
                                                 <p>
                                                     <a
@@ -724,7 +819,7 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>日本旅館HP</h3>
+                                                <h3>【個人制作】日本旅館HP</h3>
                                                 <p>Figma</p>
                                                 <p>
                                                     <a
@@ -774,7 +869,7 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>リゾートHP</h3>
+                                                <h3>【個人制作】リゾートHP</h3>
                                                 <p>Figma</p>
                                                 <p>
                                                     <a
@@ -824,7 +919,9 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>受託開発会社HP</h3>
+                                                <h3>
+                                                    【個人制作】受託開発会社HP
+                                                </h3>
                                                 <p>Figma</p>
                                                 <p>
                                                     <a
@@ -874,7 +971,7 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>美容院HP</h3>
+                                                <h3>【個人制作】美容院HP</h3>
                                                 <p>Adobe XD</p>
                                                 <p>
                                                     <a
@@ -924,11 +1021,13 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>ポートフォリオサイト</h3>
+                                                <h3>
+                                                    【個人制作】ポートフォリオサイト
+                                                </h3>
                                                 <p>Figma</p>
                                                 <p>
                                                     <a
-                                                        href="https://traveler20.site/portfolio"
+                                                        href="https://traveler20.site/archive/202111/"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         >Webサイト</a
@@ -976,12 +1075,12 @@
                                             </dt>
                                             <dd>
                                                 <h3>
-                                                    個人事業主用に制作したホームページ
+                                                    【個人制作】個人事業主用に制作したホームページ
                                                 </h3>
                                                 <p>Figma</p>
                                                 <p>
                                                     <a
-                                                        href="https://traveler20.site"
+                                                        href="https://traveler20.site/archive/202201/"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         >Webサイト</a
@@ -1029,7 +1128,7 @@
                                             </dt>
                                             <dd>
                                                 <h3>
-                                                    アプリ「ここっぷ」のランディングページ
+                                                    【個人制作】アプリ「ここっぷ」のランディングページ
                                                 </h3>
                                                 <p>Adobe XD</p>
                                                 <p>
@@ -1053,6 +1152,108 @@
                     <article class="l-section__block">
                         <h3 class="c-block-slideTitle">コーディング実装</h3>
                         <ul class="c-block-slide">
+                            <li class="c-block-slide__list">
+                                <figure
+                                    class="c-block-slide__figure"
+                                    data-modal-open="modal-1-15"
+                                >
+                                    <img
+                                        src="https://traveler20.github.io/asset/img/work/job_cd_cubic_remoma.webp"
+                                        alt="ホームページコーディング"
+                                        loading="lazy"
+                                    />
+                                    <figcaption
+                                        class="c-block-slide__figcaption"
+                                    >
+                                        ランディングページ
+                                    </figcaption>
+                                </figure>
+                                <article
+                                    class="c-block-slide__modal"
+                                    data-modal="modal-1-15"
+                                >
+                                    <div class="c-block-slide__mask"></div>
+                                    <div class="c-block-slide__window">
+                                        <dl class="c-block-slide__dl">
+                                            <dt>
+                                                <img
+                                                    class="c-block-slide__img"
+                                                    src="https://traveler20.github.io/asset/img/work/job_cd_cubic_remoma.webp"
+                                                    alt="ホームページコーディング"
+                                                    loading="lazy"
+                                                />
+                                            </dt>
+                                            <dd>
+                                                <h3>リモマLP</h3>
+                                                <p>HTML/CSS/SCSS/JavaScript</p>
+                                                <p>
+                                                    <a
+                                                        href="https://www.cubic-corp.net/remoma"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        >Webサイト</a
+                                                    >
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                        <div class="c-block-slide__close">
+                                            &times;
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+
+                            <li class="c-block-slide__list">
+                                <figure
+                                    class="c-block-slide__figure"
+                                    data-modal-open="modal-1-16"
+                                >
+                                    <img
+                                        src="https://traveler20.github.io/asset/img/work/job_cd_cubic_trendboost.webp"
+                                        alt="ホームページコーディング"
+                                        loading="lazy"
+                                    />
+                                    <figcaption
+                                        class="c-block-slide__figcaption"
+                                    >
+                                        ランディングページ
+                                    </figcaption>
+                                </figure>
+                                <article
+                                    class="c-block-slide__modal"
+                                    data-modal="modal-1-16"
+                                >
+                                    <div class="c-block-slide__mask"></div>
+                                    <div class="c-block-slide__window">
+                                        <dl class="c-block-slide__dl">
+                                            <dt>
+                                                <img
+                                                    class="c-block-slide__img"
+                                                    src="https://traveler20.github.io/asset/img/work/job_cd_cubic_trendboost.webp"
+                                                    alt="ホームページコーディング"
+                                                    loading="lazy"
+                                                />
+                                            </dt>
+                                            <dd>
+                                                <h3>TrendBoost LP</h3>
+                                                <p>HTML/CSS/SCSS/JavaScript</p>
+                                                <p>
+                                                    <a
+                                                        href="https://www.cubic-corp.net/trendboost"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        >Webサイト</a
+                                                    >
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                        <div class="c-block-slide__close">
+                                            &times;
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+
                             <li class="c-block-slide__list">
                                 <figure
                                     class="c-block-slide__figure"
@@ -1086,14 +1287,14 @@
                                             </dt>
                                             <dd>
                                                 <h3>
-                                                    個人事業主用に制作したホームページ
+                                                    【個人制作】個人事業主用に制作したホームページ
                                                 </h3>
                                                 <p>
                                                     HTML/CSS/SCSS/JavaScript/WordPress
                                                 </p>
                                                 <p>
                                                     <a
-                                                        href="https://traveler20.site"
+                                                        href="https://traveler20.site/archive/202201/"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         >Webサイト</a
@@ -1141,7 +1342,7 @@
                                             </dt>
                                             <dd>
                                                 <h3>
-                                                    観葉植物通販サイトのランディングページ
+                                                    【個人制作】観葉植物通販サイトのランディングページ
                                                 </h3>
                                                 <p>
                                                     HTML/CSS/SCSS/JavaScript/jQuery
@@ -1195,11 +1396,13 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>砥峰高原特集サイト</h3>
+                                                <h3>
+                                                    【個人制作】砥峰高原特集サイト
+                                                </h3>
                                                 <p>HTML/CSS/JavaScript</p>
                                                 <p>
                                                     <a
-                                                        href="https://traveler20.github.io/TonominePlateau/"
+                                                        href="https://traveler20.github.io/tonomine/"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         >Webサイト</a
@@ -1247,7 +1450,7 @@
                                             </dt>
                                             <dd>
                                                 <h3>
-                                                    アプリ「ここっぷ」のランディングページ
+                                                    【個人制作】アプリ「ここっぷ」のランディングページ
                                                 </h3>
                                                 <p>HTML/CSS/JavaScript</p>
                                                 <p>
@@ -1299,11 +1502,13 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>ポートフォリオサイト</h3>
+                                                <h3>
+                                                    【個人制作】ポートフォリオサイト
+                                                </h3>
                                                 <p>HTML/CSS/SCSS/JavaScript</p>
                                                 <p>
                                                     <a
-                                                        href="https://traveler20.site/portfolio"
+                                                        href="https://traveler20.site/archive/202111/"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         >Webサイト</a
@@ -1350,7 +1555,9 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>制作会社ホームページ</h3>
+                                                <h3>
+                                                    【個人制作】制作会社ホームページ
+                                                </h3>
                                                 <p>gulp/Dart Sass/EJS</p>
                                                 <p>
                                                     <a
@@ -1401,7 +1608,7 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>和風サイト</h3>
+                                                <h3>【個人制作】和風サイト</h3>
                                                 <p>gulp/Dart Sass/EJS</p>
                                                 <p>
                                                     <a
@@ -1452,7 +1659,9 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>カフェのホームページ</h3>
+                                                <h3>
+                                                    【個人制作】カフェのホームページ
+                                                </h3>
                                                 <p>gulp/Dart Sass/EJS</p>
                                                 <p>
                                                     <a
@@ -1503,7 +1712,9 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>ポートフォリオサイト</h3>
+                                                <h3>
+                                                    【個人制作】ポートフォリオサイト
+                                                </h3>
                                                 <p>gulp/Dart Sass/EJS</p>
                                                 <p>
                                                     <a
@@ -1554,7 +1765,9 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>キャリア系ブログサイト</h3>
+                                                <h3>
+                                                    【個人制作】キャリア系ブログサイト
+                                                </h3>
                                                 <p>
                                                     WordPress/CSS（自作スキン）
                                                 </p>
@@ -1607,7 +1820,7 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>書籍紹介LP</h3>
+                                                <h3>【個人制作】書籍紹介LP</h3>
                                                 <p>HTML/CSS/SCSS</p>
                                                 <p>
                                                     <a
@@ -1658,7 +1871,7 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>コンサルLP</h3>
+                                                <h3>【個人制作】コンサルLP</h3>
                                                 <p>HTML/CSS</p>
                                                 <p>
                                                     <a
@@ -1709,7 +1922,7 @@
                                                 />
                                             </dt>
                                             <dd>
-                                                <h3>飲食店HP</h3>
+                                                <h3>【個人制作】飲食店HP</h3>
                                                 <p>HTML/CSS</p>
                                                 <p>
                                                     <a
@@ -2102,36 +2315,12 @@
                 <nav class="l-footer__nav">
                     <h4 class="l-footer__subtitle">Pages</h4>
                     <ul class="l-footer__lists">
-                        <li>
-                            <a href="https://yurukei-career.com/work/"
-                                >トップ</a
-                            >
-                        </li>
-                        <li>
-                            <a href="https://yurukei-career.com/work/feature"
-                                >特長</a
-                            >
-                        </li>
-                        <li>
-                            <a href="https://yurukei-career.com/work/skill"
-                                >スキル</a
-                            >
-                        </li>
-                        <li>
-                            <a href="https://yurukei-career.com/work/work"
-                                >実績</a
-                            >
-                        </li>
-                        <li>
-                            <a href="https://yurukei-career.com/work/service"
-                                >サービス</a
-                            >
-                        </li>
-                        <li>
-                            <a href="https://yurukei-career.com/work/about"
-                                >プロフィール</a
-                            >
-                        </li>
+                        <li><a href="#page-top">トップ</a></li>
+                        <li><a href="#feature">特長</a></li>
+                        <li><a href="#skill">スキル</a></li>
+                        <li><a href="#work">実績</a></li>
+                        <li><a href="#service">サービス</a></li>
+                        <li><a href="#about">プロフィール</a></li>
                     </ul>
                 </nav>
                 <nav class="l-footer__nav">
